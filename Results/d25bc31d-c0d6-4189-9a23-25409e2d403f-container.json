@@ -1,0 +1,16 @@
+{
+  "uuid": "2aa7d993-6a45-4f59-a17d-70c4c7fe22b0",
+  "children": [
+    "788f12dc-eb2c-43fe-a2fa-7e7e7dd78790"
+  ],
+  "befores": [
+    {
+      "name": "TestclassSetup",
+      "status": "passed",
+      "start": 1594205175242,
+      "stop": 1594205175242
+    }
+  ],
+  "start": 1594205175242,
+  "stop": 1594205232634
+}

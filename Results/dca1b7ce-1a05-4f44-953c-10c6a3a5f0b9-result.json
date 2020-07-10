@@ -1,0 +1,86 @@
+{
+  "name": "test_editSearchedMessage",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "loginscreen",
+      "source": "d24a9fd9-c14e-4305-adb7-672914db4d97-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "loginscreen",
+      "source": "dc70d7c3-a79c-433f-a901-875eb2819a50-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "Search_Measure",
+      "source": "e7831606-efe2-4427-a5bd-8492f5583f6a-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "Edit_measure",
+      "source": "ef6ad736-34dc-4c65-8214-cfc71862fd0d-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "log",
+      "source": "960ea6fb-f1e3-4f6e-8ce6-9ac4fc1168ee-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1594205282013,
+  "stop": 1594205336559,
+  "uuid": "15e7e676-c6ef-42b6-b9e0-94014767b259",
+  "historyId": "135d926e527e22e189a627b2c92314d9",
+  "testCaseId": "faff1903d94088d136a9147d12dcb0bb",
+  "fullName": "SearchMeasureOperations_test.SMCTests#test_editSearchedMessage",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "@pytest.mark.usefixtures('oneTimeSetUp', 'setUp')"
+    },
+    {
+      "name": "tag",
+      "value": "flaky(reruns=2, reruns_delay=5)"
+    },
+    {
+      "name": "suite",
+      "value": "SearchMeasureOperations_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "SMCTests"
+    },
+    {
+      "name": "host",
+      "value": "IFM0523-12202.tenethealth.net"
+    },
+    {
+      "name": "thread",
+      "value": "95992-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "SearchMeasureOperations_test"
+    }
+  ],
+  "links": [
+    {
+      "type": "test_case",
+      "url": "Click on Edit measure as per the search criteria",
+      "name": "Click on Edit measure as per the search criteria"
+    }
+  ]
+}

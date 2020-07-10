@@ -1,0 +1,28 @@
+{
+  "UserData": {
+    "username": "himanshu.verma@innovaccer.com",
+    "password": "Innovaccer@123",
+    "invalid_password": "Test@1234"
+  },
+  "MeasureData": {
+    "measurename": "Test"
+  },
+  "Url": {
+    "staging_url": "http://10.52.124.26:3031",
+    "prod_url": "http://10.52.124.24"
+  },
+  "driver_path": {
+    "chrome_driver": "/Users/it000621/PycharmProjects/MB/driver/chromedriver 2",
+    "firefox_driver": "/Users/it000621/PycharmProjects/MB/driver/geckodriver",
+    "edge_driver": "/Users/it000621/PycharmProjects/MB/driver/msedgedriver.exe",
+    "ie_driver": "/Users/it000621/PycharmProjects/MB/driver/IEDriverServer.exe",
+    "safari_driver": "/usr/bin/safaridriver"
+  },
+  "browser": {
+    "CHROME": "chrome",
+    "FIREFOX": "firefox",
+    "SAFARI": "safari",
+    "EDGE": "edge",
+    "INTERNET": "ie"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "test_clickSearchedMessage",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "loginscreen",
+      "source": "a31dae10-1c29-4b07-a405-a8ca083283e1-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "loginscreen",
+      "source": "713376a9-dab8-4048-ba0e-7868f51051ae-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "Search_Measure",
+      "source": "83b547b2-5fa2-4a3b-a322-6179609dbb2e-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "log",
+      "source": "773095b3-1417-4410-ab56-632d2872597f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1594205135328,
+  "stop": 1594205175222,
+  "uuid": "23c5a2a1-030f-43df-aeb7-d9b4d1726849",
+  "historyId": "bf2173688761f4ab47d2e09203ea3301",
+  "testCaseId": "b1631f6e5a331353f67ebe861df07389",
+  "fullName": "SearchMeasureOperations_test.SMCTests#test_clickSearchedMessage",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "@pytest.mark.usefixtures('oneTimeSetUp', 'setUp')"
+    },
+    {
+      "name": "tag",
+      "value": "flaky(reruns=2, reruns_delay=5)"
+    },
+    {
+      "name": "suite",
+      "value": "SearchMeasureOperations_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "SMCTests"
+    },
+    {
+      "name": "host",
+      "value": "IFM0523-12202.tenethealth.net"
+    },
+    {
+      "name": "thread",
+      "value": "95992-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "SearchMeasureOperations_test"
+    }
+  ],
+  "links": [
+    {
+      "type": "test_case",
+      "url": "Click on searched measure as per the search criteria",
+      "name": "Click on searched measure as per the search criteria"
+    }
+  ]
+}

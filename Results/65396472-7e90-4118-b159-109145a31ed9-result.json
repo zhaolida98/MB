@@ -1,0 +1,86 @@
+{
+  "name": "test_duplicateSearchedMessage",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "loginscreen",
+      "source": "7df4c41b-e1b1-47b9-a243-ba356c09772a-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "loginscreen",
+      "source": "30a8a21c-f2f5-41b9-8008-095234094d78-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "Search_Measure",
+      "source": "16af82ee-800a-4d10-94eb-7cb73d0ba4ef-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "Duplicate_Measure",
+      "source": "94d5affe-9c18-4895-877b-401e48df2a3f-attachment.png",
+      "type": "image/png"
+    },
+    {
+      "name": "log",
+      "source": "37cef67c-612a-4df9-a869-b26423e9a135-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1594205175242,
+  "stop": 1594205232633,
+  "uuid": "788f12dc-eb2c-43fe-a2fa-7e7e7dd78790",
+  "historyId": "742bae82088657ba359da9b60d007ed7",
+  "testCaseId": "aa4f97195963bb93a4818345e3c573b9",
+  "fullName": "SearchMeasureOperations_test.SMCTests#test_duplicateSearchedMessage",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "@pytest.mark.usefixtures('oneTimeSetUp', 'setUp')"
+    },
+    {
+      "name": "tag",
+      "value": "flaky(reruns=2, reruns_delay=5)"
+    },
+    {
+      "name": "suite",
+      "value": "SearchMeasureOperations_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "SMCTests"
+    },
+    {
+      "name": "host",
+      "value": "IFM0523-12202.tenethealth.net"
+    },
+    {
+      "name": "thread",
+      "value": "95992-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "SearchMeasureOperations_test"
+    }
+  ],
+  "links": [
+    {
+      "type": "test_case",
+      "url": "Click on cancel duplicate measure as per the search criteria",
+      "name": "Click on cancel duplicate measure as per the search criteria"
+    }
+  ]
+}

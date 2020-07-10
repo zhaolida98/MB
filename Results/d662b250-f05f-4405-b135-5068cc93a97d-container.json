@@ -1,0 +1,24 @@
+{
+  "uuid": "d68a1953-7872-4e36-a612-0273a0575ee1",
+  "children": [
+    "eb06c7b7-83c3-406b-b315-7764166fe688"
+  ],
+  "befores": [
+    {
+      "name": "oneTimeSetUp",
+      "status": "passed",
+      "start": 1594205477598,
+      "stop": 1594205493108
+    }
+  ],
+  "afters": [
+    {
+      "name": "oneTimeSetUp::0",
+      "status": "passed",
+      "start": 1594205520816,
+      "stop": 1594205520911
+    }
+  ],
+  "start": 1594205477598,
+  "stop": 1594205520912
+}
