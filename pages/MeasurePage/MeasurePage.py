@@ -30,6 +30,16 @@ class MeasurePage(SeleniumDriver):
     _chk_poor_measure_xpath = "//input[@id='new-measure-modal-poor']"
     _measure_version_dropdown_xpath = "//div[@class='selectize-input']"
     _searched_measure_xpath = "//tr[1]//td[1]"
+    #########################
+    _edit_measure_name="//input[@id='name']"
+    _edit_measure_type = "//input[@placeholder='Type']"
+
+
+    def enterName(self, measurename):
+        self.sendKeys(measurename,self._edit_measure_name,locatorType="xpath")
+
+    def enterType(self, measureType):
+        self.sendKeys(measureType,self._edit_measure_type,locatorType="xpath")
 
     def clickEditMeasureDetail(self):
         self.elementClick(self._edit_measure_detail_xpath, locatorType="xpath")
@@ -87,11 +97,16 @@ class MeasurePage(SeleniumDriver):
         self.clickSearchMessage()
         allure.attach(self.driver.get_screenshot_as_png(), name="Search_Measure", attachment_type=AttachmentType.PNG)
 
-    def editsearchMeasure(self, measurename=""):
-        self.clickEditMeasureOverview()
-        time.sleep(3)
-        allure.attach(self.driver.get_screenshot_as_png(), name="Edit_measure", attachment_type=AttachmentType.PNG)
-        self.clickSaveEditMeasureOverview()
+    def MeasureClearFields(self,measurename):
+        MeasureName = self.getElement(locator=self._edit_measure_name)
+        MeasureName.click()
+        MeasureName.clear()
+        self.enterName(measurename)
+        MeasureType = self.getElement(locator=self._edit_measure_type)
+        MeasureType.click()
+        MeasureType.clear()
+        self.enterType(measurename)
+
 
     def duplicateMeasure(self, measurename=""):
         self.clickDuplicateMeasureDetail()
@@ -115,12 +130,4 @@ class MeasurePage(SeleniumDriver):
         allure.attach(self.driver.get_screenshot_as_png(), name="MeasureScreen", attachment_type=AttachmentType.PNG)
         return result
 
-    def verifyLoginFailed(self):
-        result = self.isElementPresent(self._failed_login, locatorType="xpath")
-        return result
 
-    def clearFields(self):
-        emailField = self.getElement(locator=self._email_field)
-        emailField.clear()
-        passwordField = self.getElement(locator=self._password_field)
-        passwordField.clear()

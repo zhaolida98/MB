@@ -1,0 +1,76 @@
+07/20/2020 05:30:18 PM - LoginPage - INFO: Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+07/20/2020 05:30:18 PM - LoginPage - INFO: Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+07/20/2020 05:30:20 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+07/20/2020 05:30:20 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+07/20/2020 05:30:22 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+07/20/2020 05:30:22 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+07/20/2020 05:30:22 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+07/20/2020 05:30:22 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+07/20/2020 05:30:25 PM - LoginPage - INFO: Element found with locator: //div[@class='view-container']//p[@class='email'] and  locatorType: xpath
+07/20/2020 05:30:25 PM - LoginPage - INFO: Element present with locator: //div[@class='view-container']//p[@class='email'] locatorType: xpath
+07/20/2020 05:30:25 PM - Util - INFO: Actual Text From Application Web UI --> :: Innovaccer
+07/20/2020 05:30:25 PM - Util - INFO: Expected Text From Application Web UI --> :: Innovaccer
+07/20/2020 05:30:25 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/20/2020 05:30:25 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title Verified
+07/20/2020 05:30:25 PM - LoginPage - INFO: Element found with locator: //div[@class='view-container']//p[@class='email'] and  locatorType: xpath
+07/20/2020 05:30:25 PM - LoginPage - INFO: Element present with locator: //div[@class='view-container']//p[@class='email'] locatorType: xpath
+07/20/2020 05:30:26 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+07/20/2020 05:30:26 PM - TestStatus - INFO: test_validLoginTEST SUCCESSFUL
+07/20/2020 05:30:26 PM - DataShopPage - INFO: Element found with locator: //a[contains(text(),'Analytics')] and  locatorType: xpath
+07/20/2020 05:30:26 PM - DataShopPage - INFO: Clicked on element with locator: //a[contains(text(),'Analytics')] locatorType: xpath
+07/20/2020 05:30:26 PM - DataShopPage - INFO: Element found with locator: //a[contains(text(),'Measure Builder')] and  locatorType: xpath
+07/20/2020 05:30:26 PM - DataShopPage - INFO: Clicked on element with locator: //a[contains(text(),'Measure Builder')] locatorType: xpath
+07/20/2020 05:30:28 PM - DataShopPage - INFO: Element found with locator: //input[@id='search'] and  locatorType: xpath
+07/20/2020 05:30:29 PM - DataShopPage - INFO: Cannot click on the element with locator: //input[@id='search'] locatorType: xpath
+07/20/2020 05:30:29 PM - DataShopPage - INFO: Element found with locator: //input[@id='search'] and  locatorType: xpath
+07/20/2020 05:30:29 PM - DataShopPage - INFO: Sent data on element with locator: //input[@id='search'] locatorType: xpath
+07/20/2020 05:30:31 PM - DataShopPage - INFO: Element found with locator: //span[@class='label count ng-binding'] and  locatorType: xpath
+07/20/2020 05:30:31 PM - DataShopPage - INFO: Element present with locator: //span[@class='label count ng-binding'] locatorType: xpath
+07/20/2020 05:30:35 PM - MeasurePage - INFO: Element found with locator: //tr[1]//td[1] and  locatorType: xpath
+07/20/2020 05:30:35 PM - MeasurePage - INFO: Clicked on element with locator: //tr[1]//td[1] locatorType: xpath
+07/20/2020 05:30:38 PM - MeasurePage - INFO: Element found with locator: //button[@id='meta-edit'] and  locatorType: xpath
+07/20/2020 05:30:38 PM - MeasurePage - INFO: Clicked on element with locator: //button[@id='meta-edit'] locatorType: xpath
+07/20/2020 05:30:40 PM - MeasurePage - INFO: Element found with locator: //input[@id='name'] and  locatorType: xpath
+07/20/2020 05:30:40 PM - MeasurePage - INFO: Sent data on element with locator: //input[@id='name'] locatorType: xpath
+07/20/2020 05:30:42 PM - MeasurePage - INFO: Element found with locator: //input[@placeholder='Type'] and  locatorType: xpath
+07/20/2020 05:30:42 PM - MeasurePage - INFO: Sent data on element with locator: //input[@placeholder='Type'] locatorType: xpath
+07/20/2020 05:30:42 PM - MeasurePage - INFO: Element found with locator: //button[@id='new-measure-modal-save'] and  locatorType: xpath
+07/20/2020 05:30:42 PM - MeasurePage - INFO: Clicked on element with locator: //button[@id='new-measure-modal-save'] locatorType: xpath
+07/20/2020 05:33:38 PM - LoginPage - INFO: Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+07/20/2020 05:33:38 PM - LoginPage - INFO: Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+07/20/2020 05:33:40 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+07/20/2020 05:33:40 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+07/20/2020 05:33:42 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+07/20/2020 05:33:42 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+07/20/2020 05:33:42 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+07/20/2020 05:33:42 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+07/20/2020 05:33:45 PM - LoginPage - INFO: Element found with locator: //div[@class='view-container']//p[@class='email'] and  locatorType: xpath
+07/20/2020 05:33:45 PM - LoginPage - INFO: Element present with locator: //div[@class='view-container']//p[@class='email'] locatorType: xpath
+07/20/2020 05:33:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Innovaccer
+07/20/2020 05:33:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Innovaccer
+07/20/2020 05:33:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/20/2020 05:33:45 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title Verified
+07/20/2020 05:33:45 PM - LoginPage - INFO: Element found with locator: //div[@class='view-container']//p[@class='email'] and  locatorType: xpath
+07/20/2020 05:33:45 PM - LoginPage - INFO: Element present with locator: //div[@class='view-container']//p[@class='email'] locatorType: xpath
+07/20/2020 05:33:46 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+07/20/2020 05:33:46 PM - TestStatus - INFO: test_validLoginTEST SUCCESSFUL
+07/20/2020 05:33:46 PM - DataShopPage - INFO: Element found with locator: //a[contains(text(),'Analytics')] and  locatorType: xpath
+07/20/2020 05:33:46 PM - DataShopPage - INFO: Clicked on element with locator: //a[contains(text(),'Analytics')] locatorType: xpath
+07/20/2020 05:33:46 PM - DataShopPage - INFO: Element found with locator: //a[contains(text(),'Measure Builder')] and  locatorType: xpath
+07/20/2020 05:33:46 PM - DataShopPage - INFO: Clicked on element with locator: //a[contains(text(),'Measure Builder')] locatorType: xpath
+07/20/2020 05:33:48 PM - DataShopPage - INFO: Element found with locator: //input[@id='search'] and  locatorType: xpath
+07/20/2020 05:33:49 PM - DataShopPage - INFO: Cannot click on the element with locator: //input[@id='search'] locatorType: xpath
+07/20/2020 05:33:49 PM - DataShopPage - INFO: Element found with locator: //input[@id='search'] and  locatorType: xpath
+07/20/2020 05:33:49 PM - DataShopPage - INFO: Sent data on element with locator: //input[@id='search'] locatorType: xpath
+07/20/2020 05:33:51 PM - DataShopPage - INFO: Element found with locator: //span[@class='label count ng-binding'] and  locatorType: xpath
+07/20/2020 05:33:51 PM - DataShopPage - INFO: Element present with locator: //span[@class='label count ng-binding'] locatorType: xpath
+07/20/2020 05:33:55 PM - MeasurePage - INFO: Element found with locator: //tr[1]//td[1] and  locatorType: xpath
+07/20/2020 05:33:55 PM - MeasurePage - INFO: Clicked on element with locator: //tr[1]//td[1] locatorType: xpath
+07/20/2020 05:33:58 PM - MeasurePage - INFO: Element found with locator: //button[@id='meta-edit'] and  locatorType: xpath
+07/20/2020 05:33:58 PM - MeasurePage - INFO: Clicked on element with locator: //button[@id='meta-edit'] locatorType: xpath
+07/20/2020 05:34:00 PM - MeasurePage - INFO: Element found with locator: //input[@id='name'] and  locatorType: xpath
+07/20/2020 05:34:00 PM - MeasurePage - INFO: Sent data on element with locator: //input[@id='name'] locatorType: xpath
+07/20/2020 05:34:02 PM - MeasurePage - INFO: Element found with locator: //input[@placeholder='Type'] and  locatorType: xpath
+07/20/2020 05:34:02 PM - MeasurePage - INFO: Sent data on element with locator: //input[@placeholder='Type'] locatorType: xpath
+07/20/2020 05:34:02 PM - MeasurePage - INFO: Element found with locator: //button[@id='new-measure-modal-save'] and  locatorType: xpath
+07/20/2020 05:34:02 PM - MeasurePage - INFO: Clicked on element with locator: //button[@id='new-measure-modal-save'] locatorType: xpath

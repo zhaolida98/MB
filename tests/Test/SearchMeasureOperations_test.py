@@ -50,8 +50,13 @@ class SMCTests(unittest.TestCase):
         time.sleep(2)
         self.mp.clicksearchMeasure()
         time.sleep(2)
-        self.mp.editsearchMeasure()
+        self.mp.clickEditMeasureOverview()
+        self.mp
         time.sleep(2)
+        self.mp.enterName(measure_data['editMeasureName'])
+        time.sleep(2)
+        self.mp.enterType(measure_data['editMeasureType'])
+        self.mp.clickSaveEditMeasureOverview()
 
     @allure.testcase("Click on duplicate measure detail as per the search criteria")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)

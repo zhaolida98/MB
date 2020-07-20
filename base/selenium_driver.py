@@ -57,7 +57,7 @@ class SeleniumDriver():
                           " not correct/supported")
         return False
 
-    def getElement(self, locator, locatorType="id"):
+    def getElement(self, locator, locatorType=None):
         element = None
         try:
             locatorType = locatorType.lower()
