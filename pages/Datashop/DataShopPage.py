@@ -14,6 +14,7 @@ class DataShopPage(SeleniumDriver):
 
     _analytics_link_xpath = "//a[contains(text(),'Analytics')]"
     _measure_builder_xpath = "//a[contains(text(),'Measure Builder')]"
+    _value_set = "//a[contains(text(),'Value Sets')]"
     _search_measure_xpath = "//input[@id='search']"
     _measure_count_xpath = "//span[@class='label count ng-binding']"
     _three_dots_xpath = "//tr[1]//td[7]//span[1]//i[1]"
@@ -32,6 +33,9 @@ class DataShopPage(SeleniumDriver):
     def enterSearchMeasure(self, measurename):
         self.sendKeys(measurename, self._search_measure_xpath, locatorType="xpath")
 
+    def clickValueset(self):
+        self.elementClick(self._value_set,locatorType="xpath")
+
     def measureCount(self):
         result = self.isElementPresent(self._measure_count_xpath, locatorType="xpath")
         return result
@@ -41,11 +45,16 @@ class DataShopPage(SeleniumDriver):
     def clickLink(self):
         self.clickAnalyticsLink()
         self.clickMeasureBuilder()
-        time.sleep(5)
+        time.sleep(2)
 
     def searchMeasure(self, measurename=""):
         self.clickSearchMeasure()
         self.enterSearchMeasure(measurename)
-        time.sleep(5)
+        time.sleep(2)
         self.measureCount()
-        time.sleep(3)
+        time.sleep(2)
+
+    def clickValueSetLink(self):
+        self.clickAnalyticsLink()
+        self.clickValueset()
+

@@ -23,18 +23,6 @@ class LoginPage(BasePage):
     _successful_login = "//div[@class='view-container']//p[@class='email']"
     _failed_login = "//div[@class='login-error-alert alert callout']"
 
-    # def getLoginLink(self):
-    #     return self.driver.find_element_by_xpath(self._login_link)
-    #
-    # def getEmailField(self):
-    #     return self.driver.find_element_by_xpath(self._email_field)
-    #
-    # def getPasswordField(self):
-    #     return self.driver.find_element_by_xpath(self._password_field)
-    #
-    # def LoginButton(self):
-    #     return self.driver.find_element_by_xpath(self._submit_link)
-
     def clickLoginLink(self):
         self.elementClick(self._login_link, locatorType="xpath")
 
@@ -58,7 +46,7 @@ class LoginPage(BasePage):
         time.sleep(2)
         self.EnterPassword(password)
         self.clickLoginButton()
-        time.sleep(7)
+        time.sleep(2)
         self.verifyLoginSuccessful()
 
     def verifyLoginSuccessful(self):

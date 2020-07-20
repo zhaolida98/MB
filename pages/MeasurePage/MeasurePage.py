@@ -20,7 +20,9 @@ class MeasurePage(SeleniumDriver):
     _duplicate_save_measure_detail_xpath = "//button[@id='measure-version=duplicate']"
     _duplicate_cancel_measure_detail_xpath = "//button[@id='measure-version-cancel']"
     _delete_measure_detail_xpath = "//button[@id='meta-duplicate']"
-    _duplicate_measure_xpath = "//button[contains(text(),'Duplicate')]"
+    _duplicate_measure_xpath = "//button[@data-testid='measure-version-detail-duplicate']"
+    _cancel_duplicate_button = "//button[@id='measure-version-cancel']"
+    _duplicate_button = "//button[@id='measure-version=duplicate']"
     _edit_measure_xpath = "//button[@class='button secondary no-margin ng-scope']"
     _measure_text_xpath = "//div[@class='columns large-12 section-heading']//span"
     _save_edit_measure_detail_xpath = "//button[@id='new-measure-modal-save']"
@@ -64,6 +66,13 @@ class MeasurePage(SeleniumDriver):
 
     def clickCancelDuplicateMeasure(self):
         self.elementClick(self._cancel_edit_measure_detail_xpath, locatorType="xpath")
+
+
+    def clickDuplicateButton(self):
+        self.elementClick(self._duplicate_button,locatorType="xpath")
+
+    def clickCancelDuplicateButton(self):
+        self.elementClick(self._cancel_duplicate_button,locatorType="xpath")
 
     def chkVersionDetails(self):
         select_box = self.elementClick(self._measure_version_dropdown_xpath)
