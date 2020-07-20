@@ -25,7 +25,7 @@
 
   "driver_path": {
     "//" : "Driver_path",
-    "chrome_driver": "/Users/it000621/PycharmProjects/MB/driver/chromedriver 2",
+    "chrome_driver": ".//driver//chromedriver 2",
     "firefox_driver": ".//driver//geckodriver",
     "edge_driver": ".//driver//msedgedriver.exe",
     "ie_driver": ".//driver/IEDriverServer.exe",
