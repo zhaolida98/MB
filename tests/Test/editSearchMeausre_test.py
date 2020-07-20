@@ -4,9 +4,9 @@ import unittest
 import allure
 import pytest
 
-from pages.home.DataShopPage import DataShopPage
-from pages.home.MeasurePage import MeasurePage
-from pages.home.login_pages import LoginPage
+from pages.Datashop.DataShopPage import DataShopPage
+from pages.MeasurePage.MeasurePage import MeasurePage
+from pages.home.login_page import LoginPage
 from utilities.configreader import user_data
 
 

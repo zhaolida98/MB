@@ -4,7 +4,7 @@ import unittest
 import allure
 import pytest
 
-from pages.home.login_pages import LoginPage
+from pages.home.login_page import LoginPage
 from utilities.configreader import user_data
 from utilities.teststatus import TestStatus
 
@@ -31,6 +31,7 @@ class LoginTests(unittest.TestCase):
     @allure.testcase("Login with invalid set of credentials")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.MINOR)
+    @pytest.mark.skip
     def test_invalidLogin(self):
         self.lp.login(user_data['username'], user_data['invalid_password'])
         time.sleep(5)

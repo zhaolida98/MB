@@ -26,6 +26,7 @@ try:
         user_data = data['UserData']
         url = data['Url']
         measure_data = data['MeasureData']
+        value_set = data['Value-set']
         driver_path = data['driver_path']
         browser = data['browser']
 except Exception as e:

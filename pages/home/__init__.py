@@ -1,1 +1,1 @@
-from . import login_pages
+from . import login_page
