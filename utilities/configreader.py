@@ -1,23 +1,4 @@
-import configparser
 import json
-
-
-def readConfigData(section, key):
-    config = configparser.ConfigParser()
-    config.read('./ConfigFiles/Config.cfg')
-    return config.get(section, key)
-
-
-def fetchElementLocator(section, key):
-    config = configparser.ConfigParser()
-    config.read('./ConfigFiles/Element.cfg')
-    return config.get(section, key)
-
-
-def fetchElementData(section, key):
-    config = configparser.ConfigParser()
-    config.read('./ConfigFiles/data.cfg')
-    return config.get(section, key)
 
 
 try:

@@ -2,9 +2,9 @@
 
   "UserData": {
     "//" : "User_details",
-    "username": "himanshu.verma@innovaccer.com",
-    "password": "Innovaccer@123",
-    "invalid_password": "Test@1234"
+    "username": "",
+    "password": "",
+    "invalid_password": ""
   },
 
   "MeasureData": {
@@ -21,8 +21,8 @@
 
   "Url": {
     "//" : "URL of the application",
-    "staging_url": "http://10.52.124.26:3031",
-    "prod_url": "http://10.52.124.24"
+    "staging_url": "",
+    "prod_url": ""
   },
 
   "driver_path": {
