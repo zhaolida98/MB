@@ -2,16 +2,17 @@
 
   "UserData": {
     "//" : "User_details",
-    "username": "",
-    "password": "",
-    "invalid_password": ""
+    "username": "himanshu.verma@innovaccer.com",
+    "password": "Innovaccer@123",
+    "invalid_password": "Test@1234"
   },
 
   "MeasureData": {
     "//" : "Measure_Name",
-    "measurename": "Test",
+    "measurename": "Test_001",
     "editMeasureName" : "Test_001",
-    "editMeasureType" : "CE_Testing"
+    "editMeasureType" : "CE_Testing",
+    "wrong_measure_name" : "Random_testing"
   },
 
   "Value-set": {
@@ -21,7 +22,7 @@
 
   "Url": {
     "//" : "URL of the application",
-    "staging_url": "",
+    "staging_url": "http://10.52.124.26:3031",
     "prod_url": ""
   },
 
@@ -41,5 +42,9 @@
     "SAFARI": "safari",
     "EDGE": "edge",
     "INTERNET": "ie"
+  },
+  "Title": {
+    "//" : "Page Title",
+    "home_page_title" : "Innovaccer"
   }
 }

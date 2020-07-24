@@ -35,8 +35,7 @@ class SeleniumDriver():
             self.log.error("### Exception Occurred when taking screenshot")
             print_stack()
 
-    def getTitle(self):
-        return self.driver.title
+
 
     def getByType(self, locatorType):
         locatorType = locatorType.lower()
@@ -57,7 +56,7 @@ class SeleniumDriver():
                           " not correct/supported")
         return False
 
-    def getElement(self, locator, locatorType=None):
+    def getElement(self, locator, locatorType="id"):
         element = None
         try:
             locatorType = locatorType.lower()
@@ -234,3 +233,20 @@ class SeleniumDriver():
         if direction == "down":
             # Scroll Down
             self.driver.execute_script("window.scrollBy(0, 1000);")
+
+
+
+    def isCheckBoxSelected(self,locator,locatorType='id',element = None):
+
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            isChecked = self.driver.find_element(byType,locator).get_attribute("checked")
+            if isChecked is not None:
+                self.log.info("Element checked with locator:"+locator+"and locatorType:"+locatorType, isChecked)
+            else:
+                self.log.info("Element checked - false")
+        except:
+            self.log.info("Element not found with locator:"+locator+"and locatorType:"+locatorType)
+
+

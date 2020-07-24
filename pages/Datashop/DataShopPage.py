@@ -16,13 +16,19 @@ class DataShopPage(SeleniumDriver):
     _measure_builder_xpath = "//a[contains(text(),'Measure Builder')]"
     _value_set = "//a[contains(text(),'Value Sets')]"
     _search_measure_xpath = "//input[@id='search']"
-    _measure_count_xpath = "//span[@class='label count ng-binding']"
     _three_dots_xpath = "//tr[1]//td[7]//span[1]//i[1]"
+    _no_measure_text = "//h4[@class='title']"
+    _measure_count_xpath = "//div[@id='main_content']/div[2]/div/div[@class='ng-scope']/div/section[1]//span[" \
+                       "@class='label count ng-binding']"
+
+    # Actions performed on the Element.
+
+    def getNoMeasureText(self):
+        self.getText(locator=self._no_measure_text,locatorType="xpath")
+
 
     def clickAnalyticsLink(self):
         self.elementClick(self._analytics_link_xpath, locatorType="xpath")
-
-    # Actions performed on the Element.
 
     def clickMeasureBuilder(self):
         self.elementClick(self._measure_builder_xpath, locatorType="xpath")
@@ -37,13 +43,14 @@ class DataShopPage(SeleniumDriver):
         self.elementClick(self._value_set,locatorType="xpath")
 
     def measureCount(self):
-        result = self.isElementPresent(self._measure_count_xpath, locatorType="xpath")
-        return result
+        self.getText(self._measure_count_xpath, locatorType="xpath")
+
 
     ### This is the functionality.
 
-    def clickLink(self):
+    def clickMBLink(self):
         self.clickAnalyticsLink()
+        time.sleep(2)
         self.clickMeasureBuilder()
         time.sleep(2)
 

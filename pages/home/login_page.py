@@ -6,6 +6,7 @@ from allure_commons.types import AttachmentType
 
 import utilities.Custom_logger as cl
 from base.basepage import BasePage
+from utilities.configreader import title
 
 
 class LoginPage(BasePage):
@@ -20,7 +21,7 @@ class LoginPage(BasePage):
     _email_field = "//form[@id='datashop-login-form']//input[@name='email']"
     _password_field = "//form[@id='datashop-login-form']//input[@name='password']"
     _submit_link = "//form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')]"
-    _successful_login = "//div[@class='view-container']//p[@class='email']"
+    _successful_login = "//p[@class='email']"
     _failed_login = "//div[@class='login-error-alert alert callout']"
 
     def clickLoginLink(self):
@@ -51,7 +52,6 @@ class LoginPage(BasePage):
 
     def verifyLoginSuccessful(self):
         result = self.isElementPresent(self._successful_login, locatorType="xpath")
-        allure.attach(self.driver.get_screenshot_as_png(), name="loginscreen", attachment_type=AttachmentType.PNG)
         return result
 
     def verifyLoginFailed(self):
@@ -59,7 +59,7 @@ class LoginPage(BasePage):
         return result
 
     def verifyLoginTitle(self):
-        return self.verifyPageTitle("Innovaccer")
+        return self.verifyPageTitle(title['home_page_title'])
 
     def clearFields(self):
         emailField = self.getElement(locator=self._email_field)

@@ -28,8 +28,6 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     def test_clickSearchedValueSet(self):
         self.lp.login(user_data['username'], user_data['password'])
-        result1 = self.lp.verifyLoginTitle()
-        self.ts.mark(result1, "Title Verified")
         result = self.lp.verifyLoginSuccessful()
         self.ts.markFinal("test_validLogin", result, "Login was successful")
         self.dsp.clickValueSetLink()

@@ -10,5 +10,6 @@ try:
         value_set = data['Value-set']
         driver_path = data['driver_path']
         browser = data['browser']
+        title = data['Title']
 except Exception as e:
     print(e)
