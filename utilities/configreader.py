@@ -11,5 +11,6 @@ try:
         driver_path = data['driver_path']
         browser = data['browser']
         title = data['Title']
+        login= data['LoginPage']
 except Exception as e:
     print(e)

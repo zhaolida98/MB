@@ -1,11 +1,9 @@
 import logging
 import time
 
-import allure
-from allure_commons.types import AttachmentType
-
 import utilities.Custom_logger as cl
 from base.basepage import BasePage
+from utilities.configreader import login
 from utilities.configreader import title
 
 
@@ -16,13 +14,12 @@ class LoginPage(BasePage):
         super().__init__(driver)
         self.driver = driver
 
-    _login_link = "//body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper " \
-                  "login-wrapper-modal']//div[1]//div[2]"
-    _email_field = "//form[@id='datashop-login-form']//input[@name='email']"
-    _password_field = "//form[@id='datashop-login-form']//input[@name='password']"
-    _submit_link = "//form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')]"
-    _successful_login = "//p[@class='email']"
-    _failed_login = "//div[@class='login-error-alert alert callout']"
+    _login_link = login['loginLink_xpath']
+    _email_field = login['emailField_xpath']
+    _password_field = login['passwordField_xpath']
+    _submit_link =  login['loginButton_xpath']
+    _successful_login = login['successfulLogin_xpath']
+    _failed_login = login['failedLogin_xpath']
 
     def clickLoginLink(self):
         self.elementClick(self._login_link, locatorType="xpath")

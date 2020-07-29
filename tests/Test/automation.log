@@ -4641,3 +4641,17 @@
 07/24/2020 07:52:54 PM - DataShopPage - INFO: The text is :: '0'
 07/24/2020 07:53:01 PM - MeasurePage - INFO: Element not found with locator: //a[contains(text(),'Test_001')] and  locatorType: xpath
 07/24/2020 07:53:01 PM - MeasurePage - INFO: Cannot click on the element with locator: //a[contains(text(),'Test_001')] locatorType: xpath
+07/28/2020 02:51:44 PM - LoginPage - INFO: Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+07/28/2020 02:51:49 PM - LoginPage - INFO: Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+07/28/2020 02:51:51 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+07/28/2020 02:51:51 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+07/28/2020 02:51:53 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+07/28/2020 02:51:53 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+07/28/2020 02:51:53 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+07/28/2020 02:51:58 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+07/28/2020 02:52:00 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+07/28/2020 02:52:00 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+07/28/2020 02:52:05 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+07/28/2020 02:52:05 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+07/28/2020 02:52:05 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+07/28/2020 02:52:05 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
