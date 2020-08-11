@@ -1,0 +1,66 @@
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:122 Cannot click on the element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:172 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:172 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:122 Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:214 Element not present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:87 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:214 Element not present with locator: //p[@class='email'] locatorType: xpath
+ERROR    TestStatus:teststatus.py:34 ### VERIFICATION FAILED :: + Login Sucessful
+INFO     TestStatus:selenium_driver.py:33 Screenshot save to directory: /Users/it000621/PycharmProjects/MB/base/../screenshots/Login Sucessful.1596557315862.png
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Analytics')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Analytics')] locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Value Sets')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Value Sets')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:169 Sent data on element with locator: //input[@placeholder='Search'] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //td[contains(text(),'Test_001')] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:119 Clicked on element with locator: //td[contains(text(),'Test_001')] locatorType: xpath
+DEBUG    ValuePage:selenium_driver.py:183 In locator condition
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //p[@class='sc-EHOje hZpdhA'] and  locatorType: xpath
+DEBUG    ValuePage:selenium_driver.py:185 Before finding text
+DEBUG    ValuePage:selenium_driver.py:187 After finding element, size is: 21
+INFO     ValuePage:selenium_driver.py:191 Getting text on element :: 
+INFO     ValuePage:selenium_driver.py:192 The text is :: 'Value Sets / Test_001'
+ERROR    TestStatus:teststatus.py:34 ### VERIFICATION FAILED :: + Valueset Name has been Verified
+INFO     TestStatus:selenium_driver.py:33 Screenshot save to directory: /Users/it000621/PycharmProjects/MB/base/../screenshots/Valueset Name has been Verified.1596557336598.png
+ERROR    TestStatus:teststatus.py:61 test_closeCancelPopup ### TEST FAILED
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:119 Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:169 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:169 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:119 Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:210 Element present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:210 Element present with locator: //p[@class='email'] locatorType: xpath
+INFO     TestStatus:teststatus.py:31 ### VERIFICATION SUCCESSFUL :: + Login Sucessful
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Analytics')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Analytics')] locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Value Sets')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Value Sets')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:169 Sent data on element with locator: //input[@placeholder='Search'] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //td[contains(text(),'Test_001')] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:119 Clicked on element with locator: //td[contains(text(),'Test_001')] locatorType: xpath
+DEBUG    ValuePage:selenium_driver.py:183 In locator condition
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //p[@class='sc-EHOje hZpdhA'] and  locatorType: xpath
+DEBUG    ValuePage:selenium_driver.py:185 Before finding text
+DEBUG    ValuePage:selenium_driver.py:187 After finding element, size is: 21
+INFO     ValuePage:selenium_driver.py:191 Getting text on element :: 
+INFO     ValuePage:selenium_driver.py:192 The text is :: 'Value Sets / Test_001'
+INFO     TestStatus:teststatus.py:31 ### VERIFICATION SUCCESSFUL :: + Valueset Name has been Verified
+INFO     TestStatus:teststatus.py:65 test_closeCancelPopup ### TEST SUCCESSFUL
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //div[@class='sc-jAaTju eCacIb']//div[3] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:119 Clicked on element with locator: //div[@class='sc-jAaTju eCacIb']//div[3] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //button[contains(text(),'Cancel')] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:119 Clicked on element with locator: //button[contains(text(),'Cancel')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:84 Element found with locator: //i[@class='material-icons sc-cMljjf OgfMF sc-bxivhb jyOsvf'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:119 Clicked on element with locator: //i[@class='material-icons sc-cMljjf OgfMF sc-bxivhb jyOsvf'] locatorType: xpath

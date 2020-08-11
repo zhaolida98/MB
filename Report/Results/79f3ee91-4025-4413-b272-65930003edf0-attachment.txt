@@ -1,0 +1,30 @@
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:119 Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:169 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:169 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:119 Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:210 Element present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:84 Element found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:210 Element present with locator: //p[@class='email'] locatorType: xpath
+INFO     TestStatus:teststatus.py:31 ### VERIFICATION SUCCESSFUL :: + Login was successful
+INFO     TestStatus:teststatus.py:65 test_validLogin ### TEST SUCCESSFUL
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Analytics')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Analytics')] locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:84 Element found with locator: //a[contains(text(),'Value Sets')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:119 Clicked on element with locator: //a[contains(text(),'Value Sets')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:172 Cannot send data on the element with locator: //input[@placeholder='Search'] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //td[contains(text(),'Test_001')] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:122 Cannot click on the element with locator: //td[contains(text(),'Test_001')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //div[@class='sc-jDwBTQ jAsbbw']//button[@class='sc-ifAKCX gFckEz'][contains(text(),'Edit')] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:122 Cannot click on the element with locator: //div[@class='sc-jDwBTQ jAsbbw']//button[@class='sc-ifAKCX gFckEz'][contains(text(),'Edit')] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //input[@placeholder='Name'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:138 Cannot clear the data with locator: //input[@placeholder='Name'] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //input[@placeholder='Name'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:172 Cannot send data on the element with locator: //input[@placeholder='Name'] locatorType: xpath
+INFO     ValuePage:selenium_driver.py:87 Element not found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Save'] and  locatorType: xpath
+INFO     ValuePage:selenium_driver.py:122 Cannot click on the element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Save'] locatorType: xpath

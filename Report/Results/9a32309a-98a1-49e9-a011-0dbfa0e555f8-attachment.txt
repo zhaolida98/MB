@@ -1,0 +1,168 @@
+  File "<string>", line 1, in <module>
+  File "<string>", line 8, in <module>
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1554, in serve
+    SlaveGateway(io=io, id=id, _startcount=2).serve()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1060, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 267, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 285, in _perform_spawn
+    reply.run()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 220, in run
+    self._result = func(*args, **kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1084, in executetask
+    do_exec(co, loc)  # noqa
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 258, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 240, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 247, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 70, in pytest_runtestloop
+    self.run_one_test(torun)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 87, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pytest_rerunfailures.py", line 200, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 100, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 186, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 217, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 244, in from_call
+    result = func()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 217, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/unittest.py", line 231, in runtest
+    self._testcase(result=self)
+  File "/anaconda3/lib/python3.7/unittest/case.py", line 663, in __call__
+    return self.run(*args, **kwds)
+  File "/anaconda3/lib/python3.7/unittest/case.py", line 615, in run
+    testMethod()
+  File "/Users/it000621/PycharmProjects/MB/tests/Test/ValueSetEditDetail_test.py", line 142, in test_CountTotalValueSet
+    self.vs.enterValueSetName(value_set['valuesetname'])
+  File "/Users/it000621/PycharmProjects/MB/pages/MeasurePage/ValueSetPage.py", line 173, in enterValueSetName
+    self.sendKeys(valueset,self._search_valueset,locatorType="xpath")
+  File "/Users/it000621/PycharmProjects/MB/base/selenium_driver.py", line 173, in sendKeys
+    print_stack()
+  File "<string>", line 1, in <module>
+  File "<string>", line 8, in <module>
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1554, in serve
+    SlaveGateway(io=io, id=id, _startcount=2).serve()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1060, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 267, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 285, in _perform_spawn
+    reply.run()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 220, in run
+    self._result = func(*args, **kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/execnet/gateway_base.py", line 1084, in executetask
+    do_exec(co, loc)  # noqa
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 258, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 240, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/main.py", line 247, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 70, in pytest_runtestloop
+    self.run_one_test(torun)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/xdist/remote.py", line 87, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pytest_rerunfailures.py", line 200, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 100, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 186, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 217, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 244, in from_call
+    result = func()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 217, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/hooks.py", line 289, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 87, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/manager.py", line 81, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "/Users/it000621/PycharmProjects/Test1/env3/lib/python3.7/site-packages/_pytest/unittest.py", line 231, in runtest
+    self._testcase(result=self)
+  File "/anaconda3/lib/python3.7/unittest/case.py", line 663, in __call__
+    return self.run(*args, **kwds)
+  File "/anaconda3/lib/python3.7/unittest/case.py", line 615, in run
+    testMethod()
+  File "/Users/it000621/PycharmProjects/MB/tests/Test/ValueSetEditDetail_test.py", line 144, in test_CountTotalValueSet
+    self.vs.countTotalValueSet()
+  File "/Users/it000621/PycharmProjects/MB/pages/MeasurePage/ValueSetPage.py", line 162, in countTotalValueSet
+    self.getText(self._count_total_valueSet,locatorType="xpath")
+  File "/Users/it000621/PycharmProjects/MB/base/selenium_driver.py", line 196, in getText
+    print_stack()

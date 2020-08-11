@@ -1,12 +1,21 @@
+from datetime import date, datetime
+
+import psycopg2
 from selenium.webdriver.common.by import By
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
-import utilities.Custom_logger as cl
+from sqlalchemy.orm import sessionmaker
+import pandas as pd
+
+import Utils.Custom_logger as cl
 import logging
 import time
 import os
+
+from Utils.configreader import db
+
 
 class SeleniumDriver():
 
@@ -20,7 +29,7 @@ class SeleniumDriver():
         Takes screenshot of the current open web page
         """
         fileName = resultMessage + "." + str(round(time.time() * 1000)) + ".png"
-        screenshotDirectory = "../screenshots/"
+        screenshotDirectory = "../Report/screenshots/"
         relativeFileName = screenshotDirectory + fileName
         currentDirectory = os.path.dirname(__file__)
         destinationFile = os.path.join(currentDirectory, relativeFileName)
@@ -56,6 +65,24 @@ class SeleniumDriver():
                           " not correct/supported")
         return False
 
+
+    def verifyTextContains(self, actualText, expectedText,locator, locatorType="id"):
+        """
+        Verify actual text contains expected text string
+
+        Parameters:
+            expectedList: Expected Text
+            actualList: Actual Text
+        """
+        self.log.info("Actual Text From Application Web UI --> :: " + actualText+locator+locatorType)
+        self.log.info("Expected Text From Application Web UI --> :: " + expectedText+locator+locatorType)
+        if expectedText.lower() in actualText.lower():
+            self.log.info("### VERIFICATION CONTAINS !!!")
+            return True
+        else:
+            self.log.info("### VERIFICATION DOES NOT CONTAINS !!!")
+            return False
+
     def getElement(self, locator, locatorType="id"):
         element = None
         try:
@@ -68,6 +95,8 @@ class SeleniumDriver():
             self.log.info("Element not found with locator: " + locator +
                           " and  locatorType: " + locatorType)
         return element
+
+
 
     def getElementList(self, locator, locatorType="id"):
         """
@@ -94,11 +123,49 @@ class SeleniumDriver():
         try:
             if locator:  # This means if locator is not empty
                 element = self.getElement(locator, locatorType)
-            element.click()
-            self.log.info("Clicked on element with locator: " + locator +
+                try:
+                    element.click()
+                    self.log.info("Clicked on element with locator: " + locator +
                           " locatorType: " + locatorType)
+                except ElementClickInterceptedException:
+                    time.sleep(5)
+                    element.click()
         except:
             self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def elementClear(self, locator="", locatorType="id", element=None):
+        """
+        Click on an element -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            element.clear()
+            self.log.info("Cleared the data with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot clear the data with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+
+    def isEnable(self, locator="", locatorType="id", element=None):
+
+        try:
+
+            element = self.getElement(locator, locatorType)
+            if element.is_enabled():
+                self.log.info("Button is enabled with locator: " + locator +
+                          " locatorType: " + locatorType)
+            else:
+                self.log.info("Button is not enabled with locator: " + locator +
+                              " locatorType: " + locatorType)
+
+        except:
+            self.log.info("Button is not enabled with locator:" + locator +
                           " locatorType: " + locatorType)
             print_stack()
 
@@ -185,6 +252,28 @@ class SeleniumDriver():
             print("Element not found")
             return False
 
+    def jsClick(self,locator,locatorType,element=None):
+        try:
+            if locator:
+                element = self.getElement(locator,locatorType)
+                self.driver.execute_script("arguments[0].click();", element)
+                self.log.info("Element is clickable with locator: " + locator +
+                          " locatorType: " + locatorType)
+                return element
+        except:
+            self.log.info("Element is not Clickable with locator:" + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+
+    def duplicateClick(self):
+        data = self.driver.find_element_by_xpath("//table/tbody/tr[1]/td[1]")
+        self.driver.execute_script("arguments[0].click();", data)
+        return data
+
+
+
+
     def elementPresenceCheck(self, locator, byType):
         """
         Check if element is present
@@ -204,7 +293,7 @@ class SeleniumDriver():
             return False
 
     def waitForElement(self, locator, locatorType="id",
-                               timeout=10, pollFrequency=0.5):
+                               timeout=5, pollFrequency=0.5):
         element = None
         try:
             byType = self.getByType(locatorType)
@@ -250,3 +339,60 @@ class SeleniumDriver():
             self.log.info("Element not found with locator:"+locator+"and locatorType:"+locatorType)
 
 
+    def createConnection(self):
+        try:
+
+            conn = psycopg2.connect(dbname=db['dbname'], host=db['host'],
+                                    port=db['port'],
+                                    user=db['user'],
+                                    password=db['password'])
+            self.log.info(conn)
+
+            # create a Session
+            Session = sessionmaker(bind=conn)
+            session = Session()
+
+            # print the connection if successful
+            print("psycopg2 connection:", conn)
+
+        except Exception as err:
+            print("psycopg2 connect() ERROR:", err)
+
+
+        return conn
+
+    def close_connection(self,connection):
+        if connection:
+            connection.close()
+            self.log.info("Postgres connection is closed")
+
+    def insert_new_record(self,test_name,test_desc, test_status,test_priority,day_duration):
+        connection = self.createConnection()
+        self.cursor = connection.cursor()
+        insert_command = "INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority," \
+                         "dduration)VALUES(" \
+                         "'{}','{}','{}','{}','{}')".format(test_name,test_desc,test_status,test_priority,day_duration)
+        self.log.info(insert_command)
+        self.cursor.execute(insert_command)
+        connection.commit()
+        self.log.info("Record inserted sucessfully")
+        self.close_connection(connection)
+
+    def getTime(self):
+        today = date.today()
+        self.log.info(today)
+
+    def getDateAndTime(self):
+        now = datetime.now()
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        self.log.info(dt_string)
+
+
+
+
+
+
+
+
+
+#dbname=db['dbname'],host=db['host'],port=db['port'],user=db['user'],password=db['password']

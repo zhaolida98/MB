@@ -1,0 +1,10 @@
+{
+  "connectionString":
+  {
+    "dbname": "conifer_production",
+    "host":"10.52.124.40",
+    "port":"5432",
+    "user":"indata",
+    "password":"qa_staging"
+  }
+}

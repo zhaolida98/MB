@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-from utilities.configreader import url, driver_path, browser
+from Utils.configreader import url, driver_path, browser
 
 
 class WebDriverFactory():
@@ -11,7 +11,7 @@ class WebDriverFactory():
 
     def getWebDriverInstance(self):
 
-        baseurl = url['staging_url']
+        baseurl = url['OH_url']
         if self.browser == browser['INTERNET']:
             driver = webdriver.Ie(executable_path=driver_path['ie_driver'])
         elif self.browser == browser['EDGE']:

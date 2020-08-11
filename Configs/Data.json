@@ -1,0 +1,62 @@
+{
+
+  "UserData": {
+    "//" : "User_details",
+    "username": "himanshu.verma@innovaccer.com",
+    "password": "Test@1234",
+    "invalid_password": "Test@12345"
+  },
+
+  "MeasureData": {
+    "//" : "Measure_Name",
+    "measurename": "copy",
+    "editMeasureName" : "Copy of Use of Spirometry Testing in the Assessment and Diagnosis of COPD",
+    "editMeasureType" : "CE_Testing",
+    "wrong_measure_name" : "Random_testing"
+  },
+
+  "Value-set": {
+    "//" : "Value_set_name",
+    "valuesetname" : "Test",
+    "Edit_valueSetName" : "HPV Tests",
+    "editValueSetName" : "Test_001",
+    "invalidValueSet" : "ABC",
+    "ActualText" : "Copy",
+    "ExpectedValueSettext" : "Value Set",
+    "Duplicate_Button_Text": "Duplicate",
+    "index_text" : "Start Index",
+    "Add_message_text" : "Successfully Done",
+    "Save_button_text" : "Save",
+    "no_value_set_text" : "No Value Set Found"
+  },
+
+  "Url": {
+    "//" : "URL of the application",
+    "OH_url" : "https://orlando.innovaccer.com/app/login",
+    "staging_url": "http://10.52.124.26:3031",
+    "prod_url": ""
+  },
+
+  "driver_path": {
+    "//" : "Driver_path",
+    "chrome_driver": "/Users/it000621/PycharmProjects/MB/driver/chromedriver 2",
+    "firefox_driver": ".//driver//geckodriver",
+    "edge_driver": ".//driver//msedgedriver.exe",
+    "ie_driver": ".//driver/IEDriverServer.exe",
+    "safari_driver": "/usr/bin/safaridriver"
+  },
+
+  "browser": {
+    "//" : "Browser_name",
+    "CHROME": "chrome",
+    "FIREFOX": "firefox",
+    "SAFARI": "safari",
+    "EDGE": "edge",
+    "INTERNET": "ie"
+  },
+  "Title": {
+    "//" : "Page Title",
+    "home_page_title" : "Innovaccer"
+  }
+
+}
