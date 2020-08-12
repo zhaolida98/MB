@@ -38,6 +38,7 @@ class LoginPage(BasePage):
     ### This is the functionality.
 
     def login(self, email="", password=""):
+        self.clickLoginLink()
         time.sleep(2)
         self.EnterEmail(email)
         time.sleep(2)

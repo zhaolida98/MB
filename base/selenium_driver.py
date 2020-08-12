@@ -266,10 +266,19 @@ class SeleniumDriver():
             print_stack()
 
 
-    def duplicateClick(self):
-        data = self.driver.find_element_by_xpath("//table/tbody/tr[1]/td[1]")
-        self.driver.execute_script("arguments[0].click();", data)
-        return data
+    def duplicateClick(self,data):
+        if data:
+            data = self.driver.find_element_by_xpath("//table/tbody/tr[1]/td[1]")
+            self.driver.execute_script("arguments[0].click();", data)
+            self.log.info("Clicked on the first element of the list")
+            return data
+        else:
+            self.log.info("Unable to click on the element")
+
+    def pageRefresh(self):
+        time.sleep(3)
+        self.driver.refresh()
+
 
 
 

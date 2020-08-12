@@ -1,0 +1,12 @@
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:135 Cannot click on the element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:185 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:185 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:135 Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:227 Element not present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:227 Element not present with locator: //p[@class='email'] locatorType: xpath

@@ -9,7 +9,8 @@
 
   "MeasureData": {
     "//" : "Measure_Name",
-    "measurename": "copy",
+    "delete_measure_name": "Testing in the Assessment",
+    "measurename": "Copy",
     "editMeasureName" : "Copy of Use of Spirometry Testing in the Assessment and Diagnosis of COPD",
     "editMeasureType" : "CE_Testing",
     "wrong_measure_name" : "Random_testing"
@@ -32,7 +33,7 @@
 
   "Url": {
     "//" : "URL of the application",
-    "OH_url" : "https://orlando.innovaccer.com/app/login",
+    "OH_url" : "https://sanitas-staging.innovaccer.com",
     "staging_url": "http://10.52.124.26:3031",
     "prod_url": ""
   },

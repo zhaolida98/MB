@@ -1,0 +1,20 @@
+INFO     SeleniumDriver:selenium_driver.py:383 2020-08-11
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:135 Cannot click on the element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:185 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:185 Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:135 Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:227 Element not present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:227 Element not present with locator: //p[@class='email'] locatorType: xpath
+ERROR    TestStatus:teststatus.py:34 ### VERIFICATION FAILED :: + Login was successful
+INFO     TestStatus:selenium_driver.py:42 Screenshot save to directory: /Users/it000621/PycharmProjects/MB/base/../Report/screenshots/Login was successful.1597147647947.png
+ERROR    TestStatus:teststatus.py:61 test_validLogin ### TEST FAILED
+INFO     SeleniumDriver:selenium_driver.py:349 <connection object at 0x1193ce2e8; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+INFO     SeleniumDriver:selenium_driver.py:375 INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration)VALUES('Edit_TC08','Save Changes','FAIL','Low','None')
+INFO     SeleniumDriver:selenium_driver.py:378 Record inserted sucessfully
+INFO     SeleniumDriver:selenium_driver.py:367 Postgres connection is closed

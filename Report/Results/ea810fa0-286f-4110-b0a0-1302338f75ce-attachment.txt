@@ -1,0 +1,27 @@
+INFO     SeleniumDriver:selenium_driver.py:383 2020-08-11
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:129 Clicked on element with locator: //body//div[@class='login-wrapper login-wrapper-modal']//div[@class='login-wrapper login-wrapper-modal']//div[1]//div[2] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:182 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:182 Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:129 Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:96 Element not found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:227 Element not present with locator: //p[@class='email'] locatorType: xpath
+INFO     LoginPage:selenium_driver.py:93 Element found with locator: //p[@class='email'] and  locatorType: xpath
+INFO     LoginPage:selenium_driver.py:223 Element present with locator: //p[@class='email'] locatorType: xpath
+INFO     TestStatus:teststatus.py:31 ### VERIFICATION SUCCESSFUL :: + Login was successful
+INFO     TestStatus:teststatus.py:65 test_validLogin ### TEST SUCCESSFUL
+INFO     DataShopPage:selenium_driver.py:93 Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:129 Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:93 Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+INFO     DataShopPage:selenium_driver.py:129 Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+DEBUG    DataShopPage:selenium_driver.py:196 In locator condition
+INFO     DataShopPage:selenium_driver.py:96 Element not found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+DEBUG    DataShopPage:selenium_driver.py:198 Before finding text
+ERROR    DataShopPage:selenium_driver.py:208 Failed to get text on element 
+INFO     SeleniumDriver:selenium_driver.py:349 <connection object at 0x1103d3ac8; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+INFO     SeleniumDriver:selenium_driver.py:375 INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration)VALUES('Edit_TC04','Close the Edit duplicate valueset with close button','FAIL','Low','None')
+INFO     SeleniumDriver:selenium_driver.py:378 Record inserted sucessfully
+INFO     SeleniumDriver:selenium_driver.py:367 Postgres connection is closed

@@ -38,6 +38,7 @@ class MeasurePage(SeleniumDriver):
     _edit_measure_type = MP['edit_measure_type']
     ########################
     _delete_measure_detail_xpath = MP['delete_measure_detail']
+    _delete_measure_xpath = MP['delete_measure']
     _delete_yes = MP['delete_yes']
     _delete_cancel = MP['delete_cancel']
     _delete_popup_text_xpath = MP['delete_popup_text']
@@ -59,7 +60,8 @@ class MeasurePage(SeleniumDriver):
     _cancel_duplicate_button_xpath = MP['cancel_duplicate_button']
     _close_duplicate_popup_xpath = MP['close_duplicate_popup']
 
-
+    def deleteMeasure(self):
+        self.elementClick(self._delete_measure_xpath,locatorType="xpath")
 
     def clickRDuplicateButton(self):
         self.waitForElement(self._duplicate_measure_button_xpath,locatorType="xpath")

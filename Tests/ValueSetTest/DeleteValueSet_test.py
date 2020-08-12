@@ -10,6 +10,7 @@ from POM.MeasurePage.ValueSetPage import ValuePage
 from POM.home.login_page import LoginPage
 from Utils.configreader import user_data, value_set
 from Utils.teststatus import TestStatus
+from base.selenium_driver import SeleniumDriver
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
@@ -22,6 +23,7 @@ class ValueSetTests(unittest.TestCase):
         self.dsp = DataShopPage(self.driver)
         self.vs = ValuePage(self.driver)
         self.ts = TestStatus(self.driver)
+        self.sd = SeleniumDriver(self.driver)
 
     @allure.testcase("Delete Valueset")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
