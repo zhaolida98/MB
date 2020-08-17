@@ -1,0 +1,133 @@
+08/17/2020 10:26:07 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:26:08 AM - LoginPage - INFO: Element found with locator: //div[text()='Innovaccer']/ancestor::div and  locatorType: xpath
+08/17/2020 10:26:08 AM - LoginPage - INFO: Clicked on element with locator: //div[text()='Innovaccer']/ancestor::div locatorType: xpath
+08/17/2020 10:26:08 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:26:23 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:26:23 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:26:39 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:26:39 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:26:54 AM - LoginPage - INFO: Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:26:59 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 10:26:59 AM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 10:27:00 AM - SeleniumDriver - INFO: <connection object at 0x10837cd68; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:27:00 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC02','Verify user account is locked if Wrong password in entered for Six times','PASS','Low','2020-08-17','52.8449')
+08/17/2020 10:27:01 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:27:01 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 10:27:57 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:27:58 AM - LoginPage - INFO: Element found with locator: //div[text()='Innovaccer']/ancestor::div and  locatorType: xpath
+08/17/2020 10:27:58 AM - LoginPage - INFO: Clicked on element with locator: //div[text()='Innovaccer']/ancestor::div locatorType: xpath
+08/17/2020 10:27:58 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:28:14 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:28:14 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:28:29 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:28:29 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:28:44 AM - LoginPage - INFO: Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:28:49 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 10:28:49 AM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 10:28:50 AM - SeleniumDriver - INFO: <connection object at 0x10b792d68; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:28:50 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC02','Verify user account is locked if Wrong password in entered for Six times','PASS','Low','2020-08-17','53.11')
+08/17/2020 10:28:51 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:28:51 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 10:28:51 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:28:51 AM - LoginPage - INFO: Element found with locator: //div[text()='Innovaccer']/ancestor::div and  locatorType: xpath
+08/17/2020 10:28:51 AM - LoginPage - INFO: Clicked on element with locator: //div[text()='Innovaccer']/ancestor::div locatorType: xpath
+08/17/2020 10:28:53 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:29:08 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:29:10 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:29:25 AM - LoginPage - INFO: Cannot send data on the element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:29:25 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:29:40 AM - LoginPage - INFO: Cannot click on the element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:29:57 AM - LoginPage - INFO: Element not found with locator: //p[@class='email'] and  locatorType: xpath
+08/17/2020 10:29:57 AM - LoginPage - INFO: Element not present with locator: //p[@class='email'] locatorType: xpath
+08/17/2020 10:30:17 AM - LoginPage - INFO: Element not found with locator: //p[@class='email'] and  locatorType: xpath
+08/17/2020 10:30:17 AM - LoginPage - INFO: Element not present with locator: //p[@class='email'] locatorType: xpath
+08/17/2020 10:30:17 AM - TestStatus - ERROR: ### VERIFICATION FAILED :: + Login was successful
+08/17/2020 10:30:18 AM - TestStatus - INFO: Screenshot save to directory: /Users/it000621/PycharmProjects/MB/base/../Report/screenshots/Login was successful.1597640417684.png
+08/17/2020 10:30:18 AM - TestStatus - ERROR: test_validLogin ### TEST FAILED
+08/17/2020 10:30:19 AM - SeleniumDriver - INFO: <connection object at 0x10b810588; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:30:19 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC01','Verify the Newly Created user is able to log in the Application Sucessfully','FAIL','Low','2020-08-17','88.307')
+08/17/2020 10:30:20 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:30:20 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 10:38:45 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:38:47 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:38:47 AM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:38:52 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 10:38:52 AM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 10:38:54 AM - SeleniumDriver - INFO: <connection object at 0x1114d9d68; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:38:54 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC02','Verify user account is locked if Wrong password in entered for Six times','PASS','Low','2020-08-17','8.3475')
+08/17/2020 10:38:55 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:38:55 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 10:38:55 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:38:55 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 10:39:10 AM - LoginPage - INFO: Cannot click on the element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 10:39:12 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:39:12 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:39:14 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:39:14 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:39:14 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:39:14 AM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:39:23 AM - LoginPage - INFO: Element not found with locator: //p[@class='email'] and  locatorType: xpath
+08/17/2020 10:39:23 AM - LoginPage - INFO: Element not present with locator: //p[@class='email'] locatorType: xpath
+08/17/2020 10:39:28 AM - LoginPage - INFO: Element not found with locator: //p[@class='email'] and  locatorType: xpath
+08/17/2020 10:39:28 AM - LoginPage - INFO: Element not present with locator: //p[@class='email'] locatorType: xpath
+08/17/2020 10:39:28 AM - TestStatus - ERROR: ### VERIFICATION FAILED :: + Login was successful
+08/17/2020 10:39:28 AM - TestStatus - ERROR: ### Exception Occurred when taking screenshot
+08/17/2020 10:39:28 AM - TestStatus - ERROR: test_validLogin ### TEST FAILED
+08/17/2020 10:39:30 AM - SeleniumDriver - INFO: <connection object at 0x111559d68; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:39:30 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC01','Verify the Newly Created user is able to log in the Application Sucessfully','FAIL','Low','2020-08-17','34.9957')
+08/17/2020 10:39:31 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:39:31 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 10:40:08 AM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 10:40:08 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 10:40:08 AM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 10:40:13 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 10:40:13 AM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 10:40:15 AM - SeleniumDriver - INFO: <connection object at 0x10d8e7d68; dsn: 'user=indata password=xxx dbname=conifer_production host=10.52.124.40 port=5432', closed: 0>
+08/17/2020 10:40:15 AM - SeleniumDriver - INFO: INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority,dduration,time_duration)VALUES('Login_TC02','Verify user account is locked if Wrong password in entered for Six times','PASS','Low','2020-08-17','6.9465')
+08/17/2020 10:40:15 AM - SeleniumDriver - INFO: Record inserted sucessfully
+08/17/2020 10:40:15 AM - SeleniumDriver - INFO: Postgres connection is closed
+08/17/2020 12:12:35 PM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 12:12:36 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 12:12:36 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 12:12:41 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 12:12:41 PM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 12:14:02 PM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 12:14:02 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Cannot click on the element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 12:14:17 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 12:14:22 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 12:14:22 PM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath
+08/17/2020 12:15:43 PM - SeleniumDriver - INFO: 2020-08-17
+08/17/2020 12:15:43 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Cannot click on the element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/17/2020 12:15:58 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/17/2020 12:16:03 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-column']//following::div[13]//* and  locatorType: xpath
+08/17/2020 12:16:03 PM - LoginPage - INFO: Element present with locator: //div[@class='login-form-column']//following::div[13]//* locatorType: xpath

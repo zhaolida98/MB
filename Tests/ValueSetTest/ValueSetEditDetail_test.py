@@ -30,6 +30,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=1)
     def test_EditValueSet(self):
+        start_time = time.time()
         tc_desc = "Edit the duplicate valueset with new name"
         tc_status = "FAIL"
         tc_name = "Edit_TC01"
@@ -45,7 +46,9 @@ class ValueSetTests(unittest.TestCase):
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
-            self.vs.searchAndClickValueSet(value_set['Edit_valueSetName'])
+            self.vs.enterValueSetName(value_set['valuesetname'])
+            time.sleep(2)
+            self.vs.clickSearchedFValueSet()
             time.sleep(3)
             result_2 = self.vs.verifyIndexText()
             assert result_2 == value_set['index_text']
@@ -61,13 +64,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Edit Valueset with cancel")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=2)
     def test_CancelValueSet(self):
+        start_time = time.time()
         tc_desc = "Cancel the Edit duplicate valueset with new name"
         tc_status = "FAIL"
         tc_name = "Edit_TC02"
@@ -78,12 +82,14 @@ class ValueSetTests(unittest.TestCase):
             # result = self.lp.verifyLoginSuccessful()
             # self.ts.markFinal("test_validLogin", result, "Login was successful")
             # self.dsp.goToValueSet()
-            self.dsp.clearSearch()
             self.sd.pageRefresh()
+            self.dsp.clearSearch()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
-            self.vs.searchAndClickValueSet(value_set['Edit_valueSetName'])
+            self.vs.enterValueSetName(value_set['valuesetname'])
+            time.sleep(2)
+            self.vs.clickSearchedFValueSet()
             time.sleep(3)
             result_2 = self.vs.verifyIndexText()
             assert result_2 == value_set['index_text']
@@ -95,7 +101,7 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
 
     @allure.testcase("Verify name in edit valueset popup")
@@ -103,6 +109,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=3)
     def test_ValidateNameValueSet(self):
+        start_time = time.time()
         tc_desc = "Verify popup heading"
         tc_status = "FAIL"
         tc_name = "Edit_TC03"
@@ -118,7 +125,9 @@ class ValueSetTests(unittest.TestCase):
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
-            self.vs.searchAndClickValueSet(value_set['Edit_valueSetName'])
+            self.vs.enterValueSetName(value_set['valuesetname'])
+            time.sleep(2)
+            self.vs.clickSearchedFValueSet()
             time.sleep(3)
             result_2 = self.vs.verifyIndexText()
             assert result_2 == value_set['index_text']
@@ -130,7 +139,7 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
 
 
@@ -140,6 +149,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=4)
     def test_CloseValueSet(self):
+        start_time = time.time()
         tc_desc = "Close the Edit duplicate valueset with close button"
         tc_status = "FAIL"
         tc_name = "Edit_TC04"
@@ -155,7 +165,9 @@ class ValueSetTests(unittest.TestCase):
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
-            self.vs.searchAndClickValueSet(value_set['Edit_valueSetName'])
+            self.vs.enterValueSetName(value_set['valuesetname'])
+            time.sleep(2)
+            self.vs.clickSearchedFValueSet()
             time.sleep(3)
             result_2 = self.vs.verifyIndexText()
             assert result_2 == value_set['index_text']
@@ -167,13 +179,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("No valueset found")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=5)
     def test_InvalidValueSet(self):
+        start_time = time.time()
         tc_desc = "No valueset found"
         tc_status = "FAIL"
         tc_name = "Edit_TC05"
@@ -185,7 +198,8 @@ class ValueSetTests(unittest.TestCase):
             # self.ts.markFinal("test_validLogin", result, "Login was successful")
             # self.dsp.goToValueSet()
             self.dsp.clearSearch()
-            self.sd.pageRefresh()
+            self.vs.pageRefresh()
+            time.sleep(3)
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -197,7 +211,7 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
 
     @allure.testcase("Count the number of valueSet")
@@ -205,6 +219,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=6)
     def test_CountTotalValueSet(self):
+        start_time = time.time()
         tc_desc = "Count total number of value-set"
         tc_status = "FAIL"
         tc_name = "Edit_TC06"
@@ -223,13 +238,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Count entered valueSet")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=7)
     def test_CountTotalValueSet(self):
+        start_time = time.time()
         tc_desc = "Count total number of entered value-set"
         tc_status = "FAIL"
         tc_name = "Edit_TC07"
@@ -250,13 +266,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Save Changes")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=8)
     def test_saveChanges(self):
+        start_time = time.time()
         tc_desc = "Save Changes"
         tc_status = "FAIL"
         tc_name = "Edit_TC08"
@@ -286,7 +303,7 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
 
     @allure.testcase("Cancel with save and close")
@@ -294,6 +311,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=9)
     def test_cancelWithSaveAndClose(self):
+        start_time = time.time()
         tc_desc = "Cancel with save and close"
         tc_status = "FAIL"
         tc_name = "Edit_TC09"
@@ -327,13 +345,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Cancel with cancel")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=10)
     def test_cancelWithCancel(self):
+        start_time = time.time()
         tc_desc = "Cancel with cancel"
         tc_status = "FAIL"
         tc_name = "Edit_TC10"
@@ -367,13 +386,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Cancel with close without saving")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=11)
     def test_cancelWithCloseWithoutSaving(self):
+        start_time = time.time()
         tc_desc = "Cancel with close without saving"
         tc_status = "FAIL"
         tc_name = "Edit_TC11"
@@ -407,13 +427,14 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("close cancel popup")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.run(order=12)
     def test_closeCancelPopup(self):
+        start_time = time.time()
         tc_desc = "Cancel with close icon"
         tc_status = "FAIL"
         tc_name = "Edit_TC12"
@@ -445,5 +466,5 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 

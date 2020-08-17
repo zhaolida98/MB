@@ -1,6 +1,7 @@
 {
   "LoginPage": {
-    "loginLink_xpath": "//div[@id='app']//following::div[45]//*[text()='Innovaccer']",
+    "loginLink_xpath": "//div[@class='login-form-container centered']//following::div[10][text()='Innovaccer']",
+    "ConiferloginLink_xpath" : "//div[@class='login-form-container centered']//following::div[12][text()='Innovaccer']",
     "emailField_xpath": "//form[@id='datashop-login-form']//input[@name='email']",
     "passwordField_xpath": "//form[@id='datashop-login-form']//input[@name='password']",
     "loginButton_xpath": "//form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')]",
@@ -69,7 +70,7 @@
   {
     "searchvalueset" : "//input[@placeholder='Search']",
     "duplicatesearchedvalueset" : "//table/tbody/tr[1]/td[1]",
-    "searchedvalueset" : "//td[contains(text(),'Copy of CCS : HPV Tests (HEDIS)')]",
+    "searchedvalueset" : "//td[contains(text(),'Copy of HPV Tests Value Set')]",
     "editvaluesetdetail":"//div[@class='sc-jAaTju eCacIb']/button[1]",
     "editvaluename" : "//input[@placeholder='Name'][@type='text']",
     "savevalueset" : "//div[@class:'sc-caSCKo gujKlR']//button[text():'Save']",

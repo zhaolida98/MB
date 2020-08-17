@@ -28,18 +28,22 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Delete Valueset")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=3)
     @pytest.mark.skip
     def test_deleteValueSet(self):
+        start_time = time.time()
         tc_desc = "Delete with close popup  icon"
         tc_status = "FAIL"
         tc_name = "Delete_valueset_01"
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -53,13 +57,15 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
-    @allure.testcase("Cancel Valueset")
+    @allure.testcase("Cancel delete Valueset")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.skip
+    @pytest.mark.run(order=1)
     def test_cancelDeleteValueSet(self):
+        start_time = time.time()
         tc_desc = "Delete with cancel"
         tc_status = "FAIL"
         tc_name = "Delete_valueset_02"
@@ -85,23 +91,28 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 
     @allure.testcase("Close Delete popup")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.skip
+    @pytest.mark.run(order=2)
     def test_closeDeleteValueSet(self):
+        start_time = time.time()
         tc_desc = "Delete with close popup  icon"
         tc_status = "FAIL"
         tc_name = "Delete_valueset_03"
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.vs.pageRefresh()
+            time.sleep(2)
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -117,5 +128,5 @@ class ValueSetTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time, start_time)
 

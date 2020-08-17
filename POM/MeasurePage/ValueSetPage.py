@@ -162,7 +162,8 @@ class ValuePage(SeleniumDriver):
         return result
 
     def noValueSetFound(self):
-        self.getText(self._no_valueset_found,locatorType="xpath")
+        result_1 = self.getText(self._no_valueset_found,locatorType="xpath")
+        return result_1
 
     def countTotalValueSet(self):
         self.getText(self._count_total_valueSet,locatorType="xpath")
