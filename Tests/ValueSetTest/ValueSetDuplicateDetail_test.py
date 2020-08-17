@@ -70,7 +70,8 @@ class ValueSetTests(unittest.TestCase):
             result = self.vs.waitForSearchedValueSet()
             self.vs.enterValueSetName(value_set['valuesetname'])
             time.sleep(4)
-            dd = self.sd.duplicateClick()
+            self.sd.duplicateClick()
+            time.sleep(3)
             result_2 = self.vs.verifyIndexText()
             assert result_2 == value_set['index_text']
             time.sleep(2)

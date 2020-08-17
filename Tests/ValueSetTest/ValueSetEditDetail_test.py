@@ -28,6 +28,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Edit Valueset with save")
     @pytest.mark.flaky(reruns=0, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=1)
     def test_EditValueSet(self):
         tc_desc = "Edit the duplicate valueset with new name"
         tc_status = "FAIL"
@@ -39,6 +40,8 @@ class ValueSetTests(unittest.TestCase):
             result = self.lp.verifyLoginSuccessful()
             self.ts.markFinal("test_validLogin", result, "Login was successful")
             self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -63,6 +66,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Edit Valueset with cancel")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=2)
     def test_CancelValueSet(self):
         tc_desc = "Cancel the Edit duplicate valueset with new name"
         tc_status = "FAIL"
@@ -70,10 +74,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -95,6 +101,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Verify name in edit valueset popup")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=3)
     def test_ValidateNameValueSet(self):
         tc_desc = "Verify popup heading"
         tc_status = "FAIL"
@@ -102,10 +109,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -129,6 +138,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Close valueset popup with close button")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=4)
     def test_CloseValueSet(self):
         tc_desc = "Close the Edit duplicate valueset with close button"
         tc_status = "FAIL"
@@ -136,10 +146,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -160,6 +172,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("No valueset found")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=5)
     def test_InvalidValueSet(self):
         tc_desc = "No valueset found"
         tc_status = "FAIL"
@@ -167,10 +180,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -188,6 +203,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Count the number of valueSet")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=6)
     def test_CountTotalValueSet(self):
         tc_desc = "Count total number of value-set"
         tc_status = "FAIL"
@@ -195,10 +211,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             time.sleep(4)
             self.vs.countTotalValueSet()
             tc_status = "PASS"
@@ -210,6 +228,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Count entered valueSet")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=7)
     def test_CountTotalValueSet(self):
         tc_desc = "Count total number of entered value-set"
         tc_status = "FAIL"
@@ -217,10 +236,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             time.sleep(4)
             self.vs.enterValueSetName(value_set['valuesetname'])
             time.sleep(2)
@@ -234,6 +255,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Save Changes")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=8)
     def test_saveChanges(self):
         tc_desc = "Save Changes"
         tc_status = "FAIL"
@@ -241,10 +263,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -268,6 +292,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Cancel with save and close")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=9)
     def test_cancelWithSaveAndClose(self):
         tc_desc = "Cancel with save and close"
         tc_status = "FAIL"
@@ -275,10 +300,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -305,6 +332,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Cancel with cancel")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=10)
     def test_cancelWithCancel(self):
         tc_desc = "Cancel with cancel"
         tc_status = "FAIL"
@@ -312,10 +340,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -342,6 +372,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("Cancel with close without saving")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=11)
     def test_cancelWithCloseWithoutSaving(self):
         tc_desc = "Cancel with close without saving"
         tc_status = "FAIL"
@@ -349,10 +380,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()
@@ -379,6 +412,7 @@ class ValueSetTests(unittest.TestCase):
     @allure.testcase("close cancel popup")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=12)
     def test_closeCancelPopup(self):
         tc_desc = "Cancel with close icon"
         tc_status = "FAIL"
@@ -386,10 +420,12 @@ class ValueSetTests(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.goToValueSet()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.goToValueSet()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             result_1 = self.dsp.verifyValueSettext()
             assert result_1 == value_set['ExpectedValueSettext']
             result = self.vs.waitForSearchedValueSet()

@@ -1,12 +1,9 @@
 import logging
 import time
 
-import allure
-from allure_commons.types import AttachmentType
-
 import Utils.Custom_logger as cl
-from base.selenium_driver import SeleniumDriver
 from Utils.configreader import MP
+from base.selenium_driver import SeleniumDriver
 
 
 class MeasurePage(SeleniumDriver):
@@ -42,6 +39,7 @@ class MeasurePage(SeleniumDriver):
     _delete_yes = MP['delete_yes']
     _delete_cancel = MP['delete_cancel']
     _delete_popup_text_xpath = MP['delete_popup_text']
+    _delete_button_presence = "//div[@class='row wrapper']//following::div[18]/button[3]/*[text()='delete']"
     ########################
     _new_measure_button = MP['new_measure_button']
     _add_measure_button = MP['add_measure_button']
@@ -55,17 +53,20 @@ class MeasurePage(SeleniumDriver):
     _edit_measure_text_xpath = MP['_edit_measure_text']
     _duplicate_text_xpath = MP['_duplicate_text']
     #########Right Hand Side##################
-    _duplicate_measure_button_xpath= MP['duplicate_measure_button']
+    _duplicate_measure_button_xpath = MP['duplicate_measure_button']
     _continue_duplicate_button_xpath = MP['continue_duplicate_button']
     _cancel_duplicate_button_xpath = MP['cancel_duplicate_button']
     _close_duplicate_popup_xpath = MP['close_duplicate_popup']
 
+    def deleteButtonEnable(self):
+        self.isEnable(self._delete_button_presence, locatorType="xpath")
+
     def deleteMeasure(self):
-        self.elementClick(self._delete_measure_xpath,locatorType="xpath")
+        self.elementClick(self._delete_measure_xpath, locatorType="xpath")
 
     def clickRDuplicateButton(self):
-        self.waitForElement(self._duplicate_measure_button_xpath,locatorType="xpath")
-        self.elementClick(self._duplicate_measure_button_xpath,locatorType="xpath")
+        self.waitForElement(self._duplicate_measure_button_xpath, locatorType="xpath")
+        self.elementClick(self._duplicate_measure_button_xpath, locatorType="xpath")
 
     def clickRContinueDuplicateM(self):
         self.waitForElement(self._continue_duplicate_button_xpath, locatorType="xpath")
@@ -167,7 +168,7 @@ class MeasurePage(SeleniumDriver):
     def clickEditMeasureDetail(self):
         self.elementClick(self._edit_measure_detail_xpath, locatorType="xpath")
 
-    def clickSearchMessage(self):
+    def clickSearchMeasure(self):
         self.elementClick(self._searched_measure_xpath, locatorType="xpath")
 
     def waitForDeleteButton(self):
@@ -220,9 +221,7 @@ class MeasurePage(SeleniumDriver):
             return
             element.get_attribute("value")
 
-
-
-    def clicksearchMeasure(self, measurename=""):
+    def clicksearchMeasure(self):
         self.clickSearchMessage()
 
     def measureNameClearFields(self):

@@ -1,4 +1,3 @@
-import time
 import unittest
 
 import allure
@@ -9,6 +8,7 @@ from POM.MeasurePage.MeasurePage import MeasurePage
 from POM.home.login_page import LoginPage
 from Utils.configreader import user_data, measure_data
 from Utils.teststatus import TestStatus
+from base.selenium_driver import SeleniumDriver
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
@@ -20,9 +20,15 @@ class NewTest(unittest.TestCase):
         self.mp = MeasurePage(self.driver)
         self.dsp = DataShopPage(self.driver)
         self.ts = TestStatus(self.driver)
+        self.sd = SeleniumDriver(self.driver)
 
+    @allure.testcase("Validate user is able to cancel the new measure modal")
+    @allure.description("")
+    @pytest.mark.flaky(reruns=0, reruns_delay=5)
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=1)
     def test_cancelNewMeasure(self):
-        tc_desc = "Verify that user is able to click on cancel button of new measure modal"
+        tc_desc = "Validate user is able to cancel the new measure modal"
         tc_status = "FAIL"
         tc_name = "Cancel_New_Measure_creation"
         tc_priority = "Low"
@@ -46,6 +52,7 @@ class NewTest(unittest.TestCase):
     @allure.description("")
     @pytest.mark.flaky(reruns=0, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=2)
     def test_countAllMeasure(self):
         tc_desc = "Verify that user is able to get the count of all available measure"
         tc_status = "FAIL"
@@ -69,6 +76,7 @@ class NewTest(unittest.TestCase):
     @allure.description("")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=3)
     def test_countValidMeasure(self):
         tc_desc = "Verify that user is able to get the count of entered measure"
         tc_status = "FAIL"
@@ -76,11 +84,11 @@ class NewTest(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.clickMBLink()
-            result_2 = self.dsp.waitForMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.clickMBLink()
+            # result_2 = self.dsp.waitForMBLink()
             self.dsp.searchMeasure(measure_data['measurename'])
             self.dsp.measureCount()
             tc_status = "PASS"
@@ -94,6 +102,7 @@ class NewTest(unittest.TestCase):
     @allure.description("")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=4)
     def test_countNoMeasure(self):
         tc_desc = "Verify that user is able to get the count as Zero of incorrect measure"
         tc_status = "FAIL"
@@ -101,11 +110,11 @@ class NewTest(unittest.TestCase):
         tc_priority = "Low"
         tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            self.ts.markFinal("test_validLogin", result, "Login was successful")
-            self.dsp.clickMBLink()
-            result_2 = self.dsp.waitForMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # self.ts.markFinal("test_validLogin", result, "Login was successful")
+            # self.dsp.clickMBLink()
+            # result_2 = self.dsp.waitForMBLink()
             self.dsp.searchMeasure(measure_data['wrong_measure_name'])
             self.dsp.measureCount()
             tc_status = "PASS"

@@ -26,16 +26,20 @@ class SMCTests(unittest.TestCase):
     @allure.description("PTCS-T20011 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=1)
     def test_clickSearchedMessage(self):
         tc_desc = "Validate user is able to search the desired measure using measure name"
         tc_status = "FAIL"
         tc_name = "SearchMeasure_TC01"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
             self.lp.login(user_data['username'], user_data['password'])
             result = self.lp.verifyLoginSuccessful()
             assert result == True
             self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             time.sleep(2)
             self.mp.clicksearchMeasure()
@@ -46,23 +50,27 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Search non existed measure")
     @allure.description("PTCS-T20202 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=2)
     def test_noMeasureMessage(self):
         tc_desc = "Validate that if an invalid name is used for the search than no results should be shown"
         tc_status = "FAIL"
         tc_name = "SearchMeasure_TC02"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
             self.lp.login(user_data['username'], user_data['password'])
             result = self.lp.verifyLoginSuccessful()
             assert result == True
             self.dsp.clickMBLink()
             time.sleep(2)
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['wrong_measure_name'])
             time.sleep(2)
             self.mp.clicksearchMeasure()
@@ -75,23 +83,27 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Click on Edit measure detail as per the search criteria")
     @allure.description("PTCS-T20018 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=3)
     def test_editSearchedMessage(self):
         tc_desc = "Validate user is able to update the measure details and definition successfully(Please refer the " \
                   "test data for desired measure name)"
         tc_status = "FAIL"
         tc_name = "EditMeasure_TC03"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             time.sleep(2)
             self.mp.clicksearchMeasure()
@@ -111,22 +123,26 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Verify edit measure text Fields")
     @allure.description("PTCS-T20194 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=4)
     def test_editMeasureTextFields(self):
         tc_desc = "Validate that following fields are shown in the Edit Measure modal"
         tc_status = "FAIL"
         tc_name = "EditMeasure_TC04"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             time.sleep(2)
             self.mp.clicksearchMeasure()
@@ -146,22 +162,26 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Click on cancel duplicate button")
     @allure.description("PTCS-T20013 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=5)
     def test_cancelDuplicateButton(self):
         tc_desc = "Validate that click on cancel should close the popup window"
         tc_status = "FAIL"
         tc_name = "DuplicateMeasure_TC05"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             time.sleep(2)
             self.mp.clicksearchMeasure()
@@ -175,23 +195,27 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
 
     @allure.testcase("Duplicate measure after clicking on Right side of duplicate Button")
     @allure.description("PTCS-T20011 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=6)
     def test_DuplicateMeasure(self):
         tc_desc = "Validate that user is able to duplicate the measure along with all details(Please refer the test data for desired measure name)"
         tc_status = "FAIL"
         tc_name = "DuplicateMeasure_TC06"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             self.mp.clicksearchMeasure()
             result = self.mp.verifyMeasureCategory()
@@ -204,22 +228,26 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Cancel Duplicate measure after clicking on Right side of duplicate Button")
     @allure.description("PTCS-T20011 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=7)
     def test_CancelDuplicateMeasure(self):
         tc_desc = "Validate that click on right side duplicate button should close the popup window"
         tc_status = "FAIL"
         tc_name = "DuplicateMeasure_TC07"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             self.mp.clicksearchMeasure()
             result = self.mp.verifyMeasureCategory()
@@ -232,22 +260,26 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)
 
     @allure.testcase("Close Duplicate Measure Popup")
     @allure.description("PTCS-T20011 (1.0)")
     @pytest.mark.flaky(reruns=2, reruns_delay=5)
     @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.run(order=8)
     def test_closeDuplicateMeasure(self):
         tc_desc = "Validate that click on close icon should close the popup window"
         tc_status = "FAIL"
         tc_name = "DuplicateMeasure_TC08"
         tc_priority = "Medium"
+        tc_time = self.sd.getTime()
         try:
-            self.lp.login(user_data['username'], user_data['password'])
-            result = self.lp.verifyLoginSuccessful()
-            assert result == True
-            self.dsp.clickMBLink()
+            # self.lp.login(user_data['username'], user_data['password'])
+            # result = self.lp.verifyLoginSuccessful()
+            # assert result == True
+            # self.dsp.clickMBLink()
+            self.dsp.clearSearch()
+            self.sd.pageRefresh()
             self.dsp.searchMeasure(measure_data['measurename'])
             self.mp.clicksearchMeasure()
             result = self.mp.verifyMeasureCategory()
@@ -260,6 +292,4 @@ class SMCTests(unittest.TestCase):
         except Exception as e:
             tc_status = "FAIL"
         finally:
-            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority)
-
-
+            self.sd.insert_new_record(tc_name, tc_desc, tc_status, tc_priority, tc_time)

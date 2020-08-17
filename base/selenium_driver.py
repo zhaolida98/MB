@@ -1,19 +1,17 @@
+import logging
+import os
+import time
 from datetime import date, datetime
+from traceback import print_stack
 
 import psycopg2
-from selenium.webdriver.common.by import By
-from traceback import print_stack
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 from sqlalchemy.orm import sessionmaker
-import pandas as pd
 
 import Utils.Custom_logger as cl
-import logging
-import time
-import os
-
 from Utils.configreader import db
 
 
@@ -252,28 +250,28 @@ class SeleniumDriver():
             print("Element not found")
             return False
 
-    def jsClick(self,locator,locatorType,element=None):
+    def jsClick(self, locator, locatorType, element=None):
+        element = None
         try:
-            if locator:
-                element = self.getElement(locator,locatorType)
-                self.driver.execute_script("arguments[0].click();", element)
-                self.log.info("Element is clickable with locator: " + locator +
-                          " locatorType: " + locatorType)
-                return element
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.driver.execute_script("arguments[0].click();", element)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
         except:
-            self.log.info("Element is not Clickable with locator:" + locator +
-                          " locatorType: " + locatorType)
-            print_stack()
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
 
+    def jsClick_1(self, locator):
+        try:
+            element = self.driver.find_element_by_xpath(locator)
+            self.driver.execute_script("arguments[0].click();", element)
+            self.log.info("Element is Clickable with locator:" + locator)
 
-    def duplicateClick(self,data):
-        if data:
-            data = self.driver.find_element_by_xpath("//table/tbody/tr[1]/td[1]")
-            self.driver.execute_script("arguments[0].click();", data)
-            self.log.info("Clicked on the first element of the list")
-            return data
-        else:
-            self.log.info("Unable to click on the element")
+        except:
+            self.log.info("Element is not Clickable with locator:" + locator)
+            # print_stack()
 
     def pageRefresh(self):
         time.sleep(3)
@@ -375,12 +373,13 @@ class SeleniumDriver():
             connection.close()
             self.log.info("Postgres connection is closed")
 
-    def insert_new_record(self,test_name,test_desc, test_status,test_priority,day_duration):
+    def insert_new_record(self, test_name, test_desc, test_status, test_priority, day_duration, start_time):
         connection = self.createConnection()
         self.cursor = connection.cursor()
         insert_command = "INSERT INTO delivery.test_api_automation_qa(tc_name,tc_desc,tc_status,tc_priority," \
-                         "dduration)VALUES(" \
-                         "'{}','{}','{}','{}','{}')".format(test_name,test_desc,test_status,test_priority,day_duration)
+                         "dduration,time_duration)VALUES(" \
+                         "'{}','{}','{}','{}','{}','{}')".format(test_name, test_desc, test_status, test_priority,
+                                                                 day_duration, round(time.time() - start_time, 4))
         self.log.info(insert_command)
         self.cursor.execute(insert_command)
         connection.commit()
@@ -390,6 +389,7 @@ class SeleniumDriver():
     def getTime(self):
         today = date.today()
         self.log.info(today)
+        return today
 
     def getDateAndTime(self):
         now = datetime.now()

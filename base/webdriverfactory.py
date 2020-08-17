@@ -5,6 +5,7 @@ from Utils.configreader import url, driver_path, browser
 
 class WebDriverFactory():
 
+
     def __init__(self, browser):
 
         self.browser = browser
@@ -24,7 +25,8 @@ class WebDriverFactory():
             driver = webdriver.Chrome(executable_path=driver_path['chrome_driver'])
         else:
             driver = webdriver.Chrome(executable_path=driver_path['chrome_driver'])
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(15)
         driver.maximize_window()
+        driver.delete_all_cookies()
         driver.get(baseurl)
         return driver

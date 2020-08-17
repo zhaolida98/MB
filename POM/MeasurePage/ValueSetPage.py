@@ -1,8 +1,5 @@
 import logging
 import time
-from selenium import webdriver
-
-from selenium.common.exceptions import ElementClickInterceptedException
 
 import Utils.Custom_logger as cl
 from Utils.configreader import VP
@@ -59,7 +56,7 @@ class ValuePage(SeleniumDriver):
     _close_duplicate_button_popup = VP['closeduplicatebuttonpopup']
     _close_edit_cancel_popup = VP['closeeditcancelpopup']
     _start_index_text_xpath = "//p[contains(text(),'Start Index')]"
-    _duplicatesearchedvalueset_xpath = "VP['duplicatesearchedvalueset']"
+    _duplicatesearchedvalueset_xpath = VP['duplicatesearchedvalueset']
 
 
     def verifyIndexText(self):
@@ -176,24 +173,16 @@ class ValuePage(SeleniumDriver):
         self.elementClick(self._close_edit_popup,locatorType="xpath")
 
     def verifyEditPopupName(self):
-        self.getText(self._verify_edit_name,locatorType='xpath')
+        self.getText(self._verify_edit_name, locatorType='xpath')
 
     def enterValueSetName(self, valueset):
-        self.sendKeys(valueset,self._search_valueset,locatorType="xpath")
-
-
+        self.sendKeys(valueset, self._search_valueset, locatorType="xpath")
 
     def clickSearchedFValueSet(self):
-        aa= self.jsClick(self._duplicatesearchedvalueset_xpath,locatorType="xpath")
-        return aa
-
-
-
-
-
+        self.jsClick(self._duplicatesearchedvalueset_xpath, locatorType="xpath")
 
     def waitForSearchedValueSet(self):
-        svs = self.waitForElement(self._searched_valueset,locatorType="xpath")
+        svs = self.waitForElement(self._searched_valueset, locatorType="xpath")
         result = self.isElementPresent(element=svs)
         return result
 

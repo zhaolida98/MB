@@ -2,7 +2,6 @@ import logging
 import time
 
 import Utils.Custom_logger as cl
-from base.selenium_driver import SeleniumDriver
 from Utils.configreader import DSP, value_set
 from base.basepage import BasePage
 
@@ -26,8 +25,12 @@ class DataShopPage(BasePage):
 
     # Actions performed on the Element.
 
+    def clearSearch(self):
+        time.sleep(4)
+        self.elementClear(self._search_measure_xpath, locatorType="xpath")
+
     def verifyValueSettext(self):
-        result = self.getText(self._valueset_text_path,locatorType="xpath")
+        result = self.getText(self._valueset_text_path, locatorType="xpath")
         return result
 
     def verifyVText(self):

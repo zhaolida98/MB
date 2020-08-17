@@ -8,27 +8,27 @@
   },
 
   "MeasureData": {
-    "//" : "Measure_Name",
+    "//": "Measure_Name",
     "delete_measure_name": "Testing in the Assessment",
-    "measurename": "Copy",
-    "editMeasureName" : "Copy of Use of Spirometry Testing in the Assessment and Diagnosis of COPD",
-    "editMeasureType" : "CE_Testing",
-    "wrong_measure_name" : "Random_testing"
+    "measurename": "Test",
+    "editMeasureName": "Copy of Use of Spirometry Testing in the Assessment and Diagnosis of COPD",
+    "editMeasureType": "CE_Testing",
+    "wrong_measure_name": "Random_testing"
   },
 
   "Value-set": {
-    "//" : "Value_set_name",
-    "valuesetname" : "Test",
-    "Edit_valueSetName" : "HPV Tests",
-    "editValueSetName" : "Test_001",
-    "invalidValueSet" : "ABC",
-    "ActualText" : "Copy",
-    "ExpectedValueSettext" : "Value Set",
+    "//": "Value_set_name",
+    "valuesetname": "Test",
+    "Edit_valueSetName": "HPV Tests",
+    "editValueSetName": "Test_Innovaccer",
+    "invalidValueSet": "ABC",
+    "ActualText": "Copy",
+    "ExpectedValueSettext": "Value Set",
     "Duplicate_Button_Text": "Duplicate",
-    "index_text" : "Start Index",
-    "Add_message_text" : "Successfully Done",
-    "Save_button_text" : "Save",
-    "no_value_set_text" : "No Value Set Found"
+    "index_text": "Start Index",
+    "Add_message_text": "Successfully Done",
+    "Save_button_text": "Save",
+    "no_value_set_text": "No Value Set Found"
   },
 
   "Url": {
