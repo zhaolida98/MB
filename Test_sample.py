@@ -1,5 +1,6 @@
 import time
 
+import random as rand
 from selenium import webdriver
 
 chrome_options = webdriver.ChromeOptions()
@@ -47,7 +48,7 @@ driver.find_element_by_xpath(_password_field).send_keys("Test@1234")
 driver.find_element_by_xpath(_submit_link).click()
 s1 = driver.title
 print(s1)
-if s1 == "Innovaccer":
+if s1 == "Sanitas-stage":
     print("Test pass")
 else:
     print("Test Failed")
@@ -59,11 +60,28 @@ driver.find_element_by_xpath(_value_set).click()
 time.sleep(10)
 driver.find_element_by_xpath(_new_valueset).click()
 time.sleep(3)
-driver.find_element_by_xpath(_new_valueset_name).send_keys("Test_Innovaccer")
-time.sleep(5)
+
+value_set_name = str(rand.randint(100,100000))
+print(value_set_name)
+
+driver.find_element_by_xpath(_new_valueset_name).send_keys("Test_Innovaccer"+value_set_name)
+time.sleep(8)
 driver.find_element_by_xpath(_drop_down_xpath).click()
-selectname = driver.find_element_by_xpath(_drop_down_values)
-driver.execute_script("arguments[0].click();", selectname)
+valueset_text = "Medication"
+result_set = driver.find_element_by_xpath("//div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul")
+Options = result_set.find_elements_by_tag_name("li")
+
+for option in Options:
+    if option.text == valueset_text:
+        option.click()
+        break;
+    #print(option.text)
+
+add_button = driver.find_element_by_xpath("//div[@class='sc-caSCKo gujKlR']//button[text()='Add']")
+add_button.click()
+
+# selectname = driver.find_element_by_xpath(_drop_down_values)
+# driver.execute_script("arguments[0].click();", selectname)
 
 # driver.find_element_by_xpath(_drop_down_values).send_keys("Procedure")
 # elements = driver.find_elements_by_xpath(_drop_down_values)

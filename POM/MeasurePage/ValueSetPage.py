@@ -57,6 +57,61 @@ class ValuePage(SeleniumDriver):
     _close_edit_cancel_popup = VP['closeeditcancelpopup']
     _start_index_text_xpath = "//p[contains(text(),'Start Index')]"
     _duplicatesearchedvalueset_xpath = VP['duplicatesearchedvalueset']
+    ###############Create-ValueSet##################################
+    _new_valueset = "//button[contains(text(),'New Value Set')]"
+    _new_valueset_name = "//div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text']"
+    _drop_down_xpath = "//div[@class='sc-jWBwVP hFBhID']//following::div[5]//*"
+    _drop_down_values = "//div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul"
+    _add_new_valueset_button = "//div[@class='sc-caSCKo gujKlR']//button[text()='Add']"
+    _add_definition_button_xpath = "//div[@id='valueset-app']//following::div[4]//button[text()='Add Definition']"
+    _year_drop_dwon_xpath = "//div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year']"
+    _add_new_definition = "//div[@class='sc-caSCKo gujKlR']/button[2][text()='Add']"
+    _save_new_valueset = "//div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save']"
+    _free_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[19]/span[text()='FREE TEXT']"
+    _cpt_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[20]/span[text()='CPT']"
+    _HCPCS_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[21]/span[text()='HCPCS']"
+    _SNOMED_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[22]/span[text()='SNOMED']"
+    _RXNORM_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[23]/span[text()='RXNORM']"
+    _NDC_text_xpath = "//div[@class='sc-jAaTju kcfckn']//following::div[24]/span[text()='NDC']"
+    _code_text_area_xpath = "//div[@class='sc-jAaTju kUzspc']//textarea[@id='codes-textarea']"
+
+
+
+    def clickOnNewValueSet(self):
+        self.elementClick(self._new_valueset,locatorType="xpath")
+
+    def enterNewValueSetName(self,name):
+        self.sendKeys(name,self._new_valueset_name,locatorType="xpath")
+
+    def clickOnDropDown(self):
+        self.elementClick(self._drop_down_xpath,locatorType="xpath")
+
+    def enterLabType(self,type):
+        self.select_from_dd(type,self._drop_down_values,locatorType="xpath")
+
+    def clickOnAddButton(self):
+        self.elementClick(self._add_new_valueset_button,locatorType="xpath")
+
+    def clickOnAddDefinition(self):
+        self.elementClick(self._add_definition_button_xpath,locatorType="xpath")
+
+
+    def clickOnYearDD(self):
+        self.elementClick(self._year_drop_dwon_xpath,locatorType="xpath")
+
+    def enterYear(self,year):
+        self.select_from_dd(year,self._drop_down_values,locatorType="xpath")
+
+    def addNewDefinitionButton(self):
+        self.elementClick(self._add_new_definition,locatorType="xpath")
+
+    def saveNewCreatedValueSet(self):
+        self.elementClick(self._save_new_valueset,locatorType="xpath")
+
+
+
+
+
 
 
     def verifyIndexText(self):

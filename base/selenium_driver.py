@@ -3,6 +3,7 @@ import os
 import time
 from datetime import date, datetime
 from traceback import print_stack
+import random as rand
 
 import psycopg2
 from selenium.common.exceptions import *
@@ -12,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from sqlalchemy.orm import sessionmaker
 
 import Utils.Custom_logger as cl
-from Utils.configreader import db
+from Utils.configreader import db, value_set
 
 
 class SeleniumDriver():
@@ -54,6 +55,8 @@ class SeleniumDriver():
             return By.XPATH
         elif locatorType == "css":
             return By.CSS_SELECTOR
+        elif locatorType == "tag_name":
+            return By.TAG_NAME
         elif locatorType == "class":
             return By.CLASS_NAME
         elif locatorType == "link":
@@ -250,7 +253,7 @@ class SeleniumDriver():
             print("Element not found")
             return False
 
-    def jsClick(self, locator, locatorType, element=None):
+    def jsClick(self, locator, locatorType):
         element = None
         try:
             locatorType = locatorType.lower()
@@ -263,15 +266,63 @@ class SeleniumDriver():
             self.log.info("Element not found with locator: " + locator +
                           " and  locatorType: " + locatorType)
 
-    def jsClick_1(self, locator):
+    def select_from_dd(self,data,locator,locatorType):
         try:
-            element = self.driver.find_element_by_xpath(locator)
-            self.driver.execute_script("arguments[0].click();", element)
-            self.log.info("Element is Clickable with locator:" + locator)
+            result_set = self.getElement(locator,locatorType)
+            Options = result_set.find_elements_by_tag_name("li")
+            for option in Options:
+                if option.text == data:
+                    option.click()
+                    break
+            self.log.info("Select the value with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Can't select the value with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+            print_stack()
+
+    def select_year_dd(self,locator,locatorType):
+        try:
+            result_set = self.getElement(locator,locatorType)
+            Options = result_set.find_elements_by_tag_name("li")
+            for option in Options:
+                if option.text == value_set['Year']:
+                    option.click()
+                    break
+            self.log.info("Select the value with locator: " + locator +
+                          " and  locatorType: " + locatorType)
 
         except:
-            self.log.info("Element is not Clickable with locator:" + locator)
-            # print_stack()
+            self.log.info("Can't select the value with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+
+
+    def randomNumber(self):
+        value_set_name = str(rand.randint(100, 100000))
+        return value_set_name
+
+
+    def verifyText(self,locator,locatorType,data):
+        try:
+            actual = self.getElement(locator,locatorType)
+            Expected = data
+            if actual == Expected:
+                self.log.info("Text matches with"+actual+"and"+Expected)
+            else:
+                self.log.info("Text doesn't matches with" + actual + "and" + Expected)
+        except:
+            self.log.info("Can't get the text  with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+
+    # def jsClick_1(self, locator):
+    #     try:
+    #         element = self.driver.find_element_by_xpath(locator)
+    #         self.driver.execute_script("arguments[0].click();", element)
+    #         self.log.info("Element is Clickable with locator:" + locator)
+    #
+    #     except:
+    #         self.log.info("Element is not Clickable with locator:" + locator)
+    #         # print_stack()
 
     def pageRefresh(self):
         time.sleep(3)
@@ -344,6 +395,9 @@ class SeleniumDriver():
                 self.log.info("Element checked - false")
         except:
             self.log.info("Element not found with locator:"+locator+"and locatorType:"+locatorType)
+
+
+
 
 
     def createConnection(self):

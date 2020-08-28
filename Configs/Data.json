@@ -28,7 +28,10 @@
     "index_text": "Start Index",
     "Add_message_text": "Successfully Done",
     "Save_button_text": "Save",
-    "no_value_set_text": "No Value Set Found"
+    "no_value_set_text": "No Value Set Found",
+    "value_set_name" : "Test_Innovaccer",
+    "value_set_type" : "Medication",
+    "Year" : "2019"
   },
 
   "Url": {

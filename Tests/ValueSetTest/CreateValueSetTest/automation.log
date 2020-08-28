@@ -1,0 +1,477 @@
+08/18/2020 03:23:59 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 03:23:59 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 03:24:02 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 03:24:02 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 03:24:04 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 03:24:04 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 03:24:04 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 03:24:04 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 03:24:06 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:24:06 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:24:06 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:24:06 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:24:06 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 03:24:06 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 03:24:06 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 03:24:06 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 03:24:11 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 03:24:11 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 03:24:31 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 03:24:31 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 03:24:35 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 03:24:38 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 03:24:38 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 03:24:38 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 03:24:38 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 03:24:38 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 03:24:38 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 03:24:38 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 03:24:56 PM - ValuePage - INFO: Element not found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+08/18/2020 03:24:56 PM - ValuePage - INFO: Cannot send data on the element with locator: //input[@placeholder='Search'] locatorType: xpath
+08/18/2020 03:25:16 PM - ValuePage - INFO: Element not found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 03:25:16 PM - ValuePage - INFO: Cannot click on the element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 03:25:18 PM - ValuePage - INFO: Locator type //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul not correct/supported
+08/18/2020 03:25:18 PM - ValuePage - INFO: Element not found with locator: Medication and  locatorType: //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul
+08/18/2020 03:25:18 PM - ValuePage - INFO: Can't select the value with locator: Medication and  locatorType: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul
+08/18/2020 03:25:36 PM - ValuePage - INFO: Element not found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 03:25:36 PM - ValuePage - INFO: Cannot click on the element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 03:26:10 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 03:26:10 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 03:26:12 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 03:26:12 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 03:26:14 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 03:26:14 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 03:26:14 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 03:26:14 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 03:26:16 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:26:16 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:26:16 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:26:16 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:26:16 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 03:26:16 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 03:26:16 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 03:26:16 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 03:26:21 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 03:26:21 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 03:26:45 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 03:26:45 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 03:26:45 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 03:26:45 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 03:26:45 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 03:26:45 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 03:26:45 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 03:26:45 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 03:26:45 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 03:26:46 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 03:26:49 PM - ValuePage - INFO: Element found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+08/18/2020 03:26:49 PM - ValuePage - INFO: Sent data on element with locator: //input[@placeholder='Search'] locatorType: xpath
+08/18/2020 03:26:54 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 03:26:54 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 03:26:56 PM - ValuePage - INFO: Locator type //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul not correct/supported
+08/18/2020 03:26:56 PM - ValuePage - INFO: Element not found with locator: Medication and  locatorType: //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul
+08/18/2020 03:26:56 PM - ValuePage - INFO: Can't select the value with locator: Medication and  locatorType: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul
+08/18/2020 03:26:59 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 03:27:06 PM - ValuePage - INFO: Cannot click on the element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 03:51:45 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 03:51:45 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 03:51:47 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 03:51:47 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 03:51:49 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 03:51:49 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 03:51:49 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 03:51:49 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 03:51:51 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:51:51 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:51:51 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:51:51 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:51:51 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 03:51:51 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 03:51:51 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 03:51:51 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 03:51:56 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 03:51:56 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 03:52:21 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 03:52:21 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 03:52:21 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 03:52:21 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 03:52:21 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 03:52:21 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 03:52:21 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 03:52:21 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 03:52:21 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 03:52:21 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 03:52:24 PM - ValuePage - INFO: Element found with locator: //input[@placeholder='Search'] and  locatorType: xpath
+08/18/2020 03:52:25 PM - ValuePage - INFO: Sent data on element with locator: //input[@placeholder='Search'] locatorType: xpath
+08/18/2020 03:52:30 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 03:52:30 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 03:52:32 PM - ValuePage - INFO: Locator type //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul not correct/supported
+08/18/2020 03:52:32 PM - ValuePage - INFO: Element not found with locator: Medication and  locatorType: //div[@class='sc-jwbwvp hfbhid']//following::div[7]/ul
+08/18/2020 03:52:32 PM - ValuePage - INFO: Can't select the value with locator: Medication and  locatorType: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul
+08/18/2020 03:52:35 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 03:52:42 PM - ValuePage - INFO: Cannot click on the element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 03:57:46 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 03:57:46 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 03:57:48 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 03:57:49 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 03:57:51 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 03:57:51 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 03:57:51 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 03:57:51 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 03:57:53 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:57:53 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:57:53 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:57:53 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:57:53 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 03:57:53 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 03:57:53 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 03:57:53 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 03:57:58 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 03:57:58 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 03:58:25 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 03:58:25 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 03:58:25 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 03:58:25 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 03:58:25 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 03:58:25 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 03:58:25 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 03:58:25 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 03:58:25 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 03:58:25 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 03:58:28 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 03:58:28 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 03:58:33 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 03:58:33 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 03:59:20 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 03:59:20 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 03:59:22 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 03:59:22 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 03:59:24 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 03:59:24 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 03:59:24 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 03:59:24 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 03:59:26 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:59:26 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:59:26 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 03:59:26 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 03:59:26 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 03:59:26 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 03:59:26 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 03:59:26 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 03:59:31 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 03:59:31 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 03:59:56 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 03:59:56 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 03:59:56 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 03:59:56 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 03:59:56 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 03:59:56 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 03:59:56 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 03:59:56 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 03:59:56 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 03:59:56 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 03:59:59 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 03:59:59 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:00:04 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:00:04 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:00:52 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 04:00:52 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 04:00:54 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 04:00:54 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 04:00:56 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 04:00:56 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 04:00:56 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 04:00:56 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 04:00:58 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:00:58 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:00:58 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:00:58 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:00:58 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 04:00:58 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 04:00:58 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 04:00:58 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 04:01:03 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 04:01:03 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 04:01:28 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 04:01:28 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 04:01:28 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 04:01:28 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 04:01:28 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 04:01:28 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 04:01:28 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 04:01:28 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 04:01:28 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 04:01:28 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 04:01:31 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 04:01:31 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:01:36 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:01:36 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:01:38 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:01:38 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:01:41 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 04:01:42 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 04:17:40 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 04:17:40 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 04:17:42 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 04:17:42 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 04:17:44 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 04:17:45 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 04:17:45 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 04:17:45 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 04:17:47 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:17:47 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:17:47 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:17:47 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:17:47 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 04:17:47 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 04:17:47 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 04:17:47 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 04:17:52 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 04:17:52 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 04:18:16 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 04:18:16 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 04:18:16 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 04:18:16 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 04:18:16 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 04:18:16 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 04:18:16 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 04:18:16 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 04:18:16 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 04:18:16 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 04:18:19 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 04:18:19 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:18:24 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:18:24 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:18:26 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:18:27 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:18:30 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 04:18:30 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 04:18:34 PM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/18/2020 04:18:34 PM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/18/2020 04:18:37 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/18/2020 04:18:37 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/18/2020 04:18:40 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:18:40 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:19:23 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 04:19:23 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 04:19:25 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 04:19:26 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 04:19:28 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 04:19:28 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 04:19:28 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 04:19:28 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 04:19:30 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:19:30 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:19:30 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:19:30 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:19:30 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 04:19:30 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 04:19:30 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 04:19:30 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 04:19:35 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 04:19:35 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 04:19:59 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 04:19:59 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 04:19:59 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 04:19:59 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 04:19:59 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 04:19:59 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 04:19:59 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 04:19:59 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 04:19:59 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 04:19:59 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 04:20:02 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 04:20:03 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:20:08 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:20:08 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:20:10 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:20:10 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:20:13 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 04:20:13 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 04:20:17 PM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/18/2020 04:20:17 PM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/18/2020 04:20:20 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/18/2020 04:20:20 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/18/2020 04:20:23 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:20:23 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:24:10 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 04:24:10 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 04:24:12 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 04:24:12 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 04:24:14 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 04:24:15 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 04:24:15 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 04:24:15 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 04:24:17 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:24:17 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:24:17 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:24:17 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:24:17 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 04:24:17 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 04:24:17 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 04:24:17 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 04:24:22 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 04:24:22 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 04:24:46 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 04:24:46 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 04:24:46 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 04:24:46 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 04:24:46 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 04:24:46 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 04:24:46 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 04:24:46 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 04:24:46 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 04:24:46 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 04:24:49 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 04:24:49 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:24:54 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:24:55 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:24:57 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:24:57 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:25:00 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 04:25:00 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 04:25:04 PM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/18/2020 04:25:04 PM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/18/2020 04:25:07 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/18/2020 04:25:07 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/18/2020 04:25:10 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:25:10 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:25:15 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] and  locatorType: xpath
+08/18/2020 04:25:15 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] locatorType: xpath
+08/18/2020 04:28:33 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/18/2020 04:28:33 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/18/2020 04:28:35 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/18/2020 04:28:36 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/18/2020 04:28:38 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/18/2020 04:28:38 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/18/2020 04:28:38 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/18/2020 04:28:38 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/18/2020 04:28:40 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:28:40 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:28:40 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/18/2020 04:28:40 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/18/2020 04:28:40 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/18/2020 04:28:40 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/18/2020 04:28:40 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/18/2020 04:28:40 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/18/2020 04:28:45 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/18/2020 04:28:45 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/18/2020 04:29:09 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/18/2020 04:29:09 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/18/2020 04:29:09 PM - DataShopPage - DEBUG: In locator condition
+08/18/2020 04:29:09 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/18/2020 04:29:09 PM - DataShopPage - DEBUG: Before finding text
+08/18/2020 04:29:09 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/18/2020 04:29:09 PM - DataShopPage - INFO: Getting text on element :: 
+08/18/2020 04:29:09 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/18/2020 04:29:09 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/18/2020 04:29:09 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/18/2020 04:29:12 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/18/2020 04:29:13 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/18/2020 04:29:18 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/18/2020 04:29:18 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/18/2020 04:29:20 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:29:20 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:29:23 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/18/2020 04:29:23 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/18/2020 04:29:27 PM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/18/2020 04:29:27 PM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/18/2020 04:29:30 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/18/2020 04:29:30 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/18/2020 04:29:33 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:29:33 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/18/2020 04:29:38 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] and  locatorType: xpath
+08/18/2020 04:29:38 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] locatorType: xpath
+08/18/2020 04:29:42 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] and  locatorType: xpath
+08/18/2020 04:29:42 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] locatorType: xpath
+08/19/2020 09:21:43 AM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/19/2020 09:21:43 AM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/19/2020 09:21:45 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/19/2020 09:21:45 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/19/2020 09:21:47 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/19/2020 09:21:47 AM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/19/2020 09:21:47 AM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/19/2020 09:21:47 AM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/19/2020 09:21:49 AM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/19/2020 09:21:49 AM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/19/2020 09:21:49 AM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/19/2020 09:21:49 AM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/19/2020 09:21:49 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/19/2020 09:21:49 AM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/19/2020 09:21:49 AM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/19/2020 09:21:49 AM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/19/2020 09:21:54 AM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/19/2020 09:21:54 AM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/19/2020 09:22:19 AM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/19/2020 09:22:19 AM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/19/2020 09:22:19 AM - DataShopPage - DEBUG: In locator condition
+08/19/2020 09:22:19 AM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/19/2020 09:22:19 AM - DataShopPage - DEBUG: Before finding text
+08/19/2020 09:22:19 AM - DataShopPage - DEBUG: After finding element, size is: 9
+08/19/2020 09:22:19 AM - DataShopPage - INFO: Getting text on element :: 
+08/19/2020 09:22:19 AM - DataShopPage - INFO: The text is :: 'Value Set'
+08/19/2020 09:22:19 AM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/19/2020 09:22:19 AM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/19/2020 09:22:22 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/19/2020 09:22:22 AM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/19/2020 09:22:27 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/19/2020 09:22:27 AM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/19/2020 09:22:29 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 09:22:29 AM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 09:22:32 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/19/2020 09:22:32 AM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/19/2020 09:22:36 AM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/19/2020 09:22:36 AM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/19/2020 09:22:39 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/19/2020 09:22:39 AM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/19/2020 09:22:42 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 09:22:42 AM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 09:22:48 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] and  locatorType: xpath
+08/19/2020 09:22:48 AM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] locatorType: xpath
+08/19/2020 09:22:52 AM - ValuePage - INFO: Element found with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] and  locatorType: xpath
+08/19/2020 09:22:52 AM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] locatorType: xpath
+08/19/2020 01:24:57 PM - LoginPage - INFO: Element found with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] and  locatorType: xpath
+08/19/2020 01:24:57 PM - LoginPage - INFO: Clicked on element with locator: //div[@class='login-form-container centered']//following::div[10][text()='Innovaccer'] locatorType: xpath
+08/19/2020 01:24:59 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='email'] and  locatorType: xpath
+08/19/2020 01:24:59 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='email'] locatorType: xpath
+08/19/2020 01:25:01 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//input[@name='password'] and  locatorType: xpath
+08/19/2020 01:25:01 PM - LoginPage - INFO: Sent data on element with locator: //form[@id='datashop-login-form']//input[@name='password'] locatorType: xpath
+08/19/2020 01:25:01 PM - LoginPage - INFO: Element found with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] and  locatorType: xpath
+08/19/2020 01:25:02 PM - LoginPage - INFO: Clicked on element with locator: //form[@id='datashop-login-form']//button[contains(text(),'Sign in to continue')] locatorType: xpath
+08/19/2020 01:25:04 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/19/2020 01:25:04 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/19/2020 01:25:04 PM - LoginPage - INFO: Element found with locator: //p[@class='email'] and  locatorType: xpath
+08/19/2020 01:25:04 PM - LoginPage - INFO: Element present with locator: //p[@class='email'] locatorType: xpath
+08/19/2020 01:25:04 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login was successful
+08/19/2020 01:25:04 PM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+08/19/2020 01:25:04 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Analytics')] and  locatorType: xpath
+08/19/2020 01:25:04 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Analytics')] locatorType: xpath
+08/19/2020 01:25:09 PM - DataShopPage - INFO: Element found with locator: //span[contains(text(),'Value Sets')] and  locatorType: xpath
+08/19/2020 01:25:09 PM - DataShopPage - INFO: Clicked on element with locator: //span[contains(text(),'Value Sets')] locatorType: xpath
+08/19/2020 01:25:33 PM - DataShopPage - INFO: Element not found with locator: //input[@id='search'] and  locatorType: xpath
+08/19/2020 01:25:33 PM - DataShopPage - INFO: Cannot clear the data with locator: //input[@id='search'] locatorType: xpath
+08/19/2020 01:25:33 PM - DataShopPage - DEBUG: In locator condition
+08/19/2020 01:25:33 PM - DataShopPage - INFO: Element found with locator: //div[@class='sc-kjoXOD ffVqqg'] and  locatorType: xpath
+08/19/2020 01:25:33 PM - DataShopPage - DEBUG: Before finding text
+08/19/2020 01:25:33 PM - DataShopPage - DEBUG: After finding element, size is: 9
+08/19/2020 01:25:33 PM - DataShopPage - INFO: Getting text on element :: 
+08/19/2020 01:25:33 PM - DataShopPage - INFO: The text is :: 'Value Set'
+08/19/2020 01:25:33 PM - ValuePage - INFO: Element found with locator: //button[contains(text(),'New Value Set')] and  locatorType: xpath
+08/19/2020 01:25:33 PM - ValuePage - INFO: Clicked on element with locator: //button[contains(text(),'New Value Set')] locatorType: xpath
+08/19/2020 01:25:36 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] and  locatorType: xpath
+08/19/2020 01:25:37 PM - ValuePage - INFO: Sent data on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[2]/input[@type='text'] locatorType: xpath
+08/19/2020 01:25:42 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* and  locatorType: xpath
+08/19/2020 01:25:42 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5]//* locatorType: xpath
+08/19/2020 01:25:44 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 01:25:44 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 01:25:47 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] and  locatorType: xpath
+08/19/2020 01:25:47 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']//button[text()='Add'] locatorType: xpath
+08/19/2020 01:25:51 PM - ValuePage - INFO: Element found with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] and  locatorType: xpath
+08/19/2020 01:25:51 PM - ValuePage - INFO: Clicked on element with locator: //div[@id='valueset-app']//following::div[4]//button[text()='Add Definition'] locatorType: xpath
+08/19/2020 01:25:54 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] and  locatorType: xpath
+08/19/2020 01:25:54 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[5][text()='Year'] locatorType: xpath
+08/19/2020 01:25:57 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 01:25:57 PM - ValuePage - INFO: Select the value with locator: //div[@class='sc-jWBwVP hFBhID']//following::div[7]/ul and  locatorType: xpath
+08/19/2020 01:26:02 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] and  locatorType: xpath
+08/19/2020 01:26:02 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-caSCKo gujKlR']/button[2][text()='Add'] locatorType: xpath
+08/19/2020 01:26:06 PM - ValuePage - INFO: Element found with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] and  locatorType: xpath
+08/19/2020 01:26:06 PM - ValuePage - INFO: Clicked on element with locator: //div[@class='sc-gPEVay fpkvQX']//following::div[2]/button[text()='Save'] locatorType: xpath
