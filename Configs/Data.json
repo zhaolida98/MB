@@ -2,9 +2,9 @@
 
   "UserData": {
     "//" : "User_details",
-    "username": "himanshu.verma@innovaccer.com",
-    "password": "Test@1234",
-    "invalid_password": "Test@12345"
+    "username": "",
+    "password": "",
+    "invalid_password": ""
   },
 
   "MeasureData": {
@@ -36,8 +36,8 @@
 
   "Url": {
     "//" : "URL of the application",
-    "OH_url" : "https://sanitas-staging.innovaccer.com",
-    "staging_url": "http://10.52.124.26:3031",
+    "OH_url" : "",
+    "staging_url": "",
     "prod_url": ""
   },
 
