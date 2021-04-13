@@ -95,9 +95,4 @@ sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.2
 sphinxcontrib-serializinghtml==1.1.3
 SQLAlchemy==1.3.7
-sshtunnel==0.1.5
-StyleFrame==2.0.4
-tabulate==0.8.3
-tblib==1.6.0
-tesults==1.2.1
-tqdm==4.36.1
+
