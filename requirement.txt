@@ -101,11 +101,3 @@ tabulate==0.8.3
 tblib==1.6.0
 tesults==1.2.1
 tqdm==4.36.1
-urllib3==1.25.3
-wcwidth==0.1.7
-webdrivermanager==0.7.4
-xlrd==1.2.0
-XlsxWriter==1.2.0
-xlutils==2.0.0
-xlwt==1.3.0
-zipp==0.5.2
